@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hobbido_and</string>
+    <string name="terms_and_policy">By clicking on "Register" you agree to our \n <font color='#0042B9'>terms of use</font>  &amp; <font color='#0042B9'>privacy policy</font></string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="next">Next</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="country_of_residence">Country of Residence</string>
+    <string name="profile_setup">Profile Setup</string>
+    <string name="select_a_minimum_of_3_categories_to_get_you_started">Select a minimum of 3 categories \n to get you started.</string>
+    <string name="search_category">Search category</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="do_not_have_an_account">Don\'t have an account? <b><font color='#672a7a'>Sign Up</font></b></string>
+    <string name="you_need_to_provide_this_information_later_to_process_your_payout">You need to provide this \n information later to process \n your payout.</string>
+    <string name="your_application_to_become_a_host_has_been_successfully_submitted_and_it_is_under_review">your application to become a host has \n been successfully submitted and it is \n under review.</string>
+    <string name="you_will_receive_a_notification_when_it_is_approved">You will receive a notification when it is approved.</string>
+</resources>
