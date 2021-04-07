@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/h"
+        android:title="Home"
+        app:itemTextAppearance="@style/menu_text_style"
+       />
+    <item
+        android:enabled="false"
+        android:id="@+id/profile"
+        android:icon="@drawable/h"
+        android:title="Profile"
+        app:itemTextAppearance="@style/menu_text_style"
+       />
+    <item
+        android:id="@+id/saved"
+        android:icon="@drawable/category_icon"
+        android:title="Categories"
+        app:itemTextAppearance="@style/menu_text_style"
+        />
+
+</menu>

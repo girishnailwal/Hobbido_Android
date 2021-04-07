@@ -5,7 +5,6 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
 
@@ -15,4 +14,7 @@
     <color name="ColorLightGray">#d7d9db</color>
     <color name="edit_text_color">#353b48</color>
     <color name="edit_text_hint_color">#959ba4</color>
+    <color name="ColorOrange">#ff8400</color>
+    <color name="ColorBlack">#26374b</color>
+    <color name="ColorLightBlack">#353b48</color>
 </resources>

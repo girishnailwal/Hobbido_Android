@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyBookingActivity">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/watingList_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_purpale_bg"
+        android:fontFamily="@font/montserrat_semibold"
+        android:lineSpacingExtra="4sp"
+        android:text="Waiting List"
+        android:textAllCaps="false"
+        android:textColor="#fafafa"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/upcoming_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upcoming_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/unselected_gray_btn_bg"
+        android:fontFamily="@font/montserrat_regular"
+        android:lineSpacingExtra="4sp"
+        android:text="Upcoming"
+        android:textAllCaps="false"
+        android:textColor="#353b48"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/history_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/watingList_btn"
+        app:layout_constraintTop_toTopOf="@+id/watingList_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/history_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/unselected_gray_btn_bg"
+        android:fontFamily="@font/montserrat_regular"
+        android:lineSpacingExtra="4sp"
+        android:text="History"
+        android:textAllCaps="false"
+        android:textColor="#353b48"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/upcoming_btn"
+        app:layout_constraintTop_toTopOf="@+id/upcoming_btn" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watingList_btn"></FrameLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bottom_line_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_container"
+        app:layout_constraintStart_toStartOf="@+id/fragment_container" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

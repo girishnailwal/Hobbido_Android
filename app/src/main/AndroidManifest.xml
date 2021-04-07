@@ -9,13 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hobbido_and">
-       <!-- <activity android:name=".activity.SucessUpdateActivity"></activity>-->
+       <!-- <activity android:name=".activity.MyBookingActivity"></activity>-->
+        <!-- <activity android:name=".activity.NearByActivity"></activity> -->
+        <!-- <activity android:name=".activity.RegularActivity"></activity> -->
+        <!-- <activity android:name=".activity.HomeActivity"></activity> -->
+        <!-- <activity android:name=".activity.ChangePasswordActivity"></activity> -->
+        <!-- <activity android:name=".activity.ForgotPasswordActivity"></activity> -->
+        <!-- <activity android:name=".activity.SetFaceIdActivity"></activity> -->
+        <!-- <activity android:name=".activity.BecomeHostActivity"></activity> -->
+        <!-- <activity android:name=".activity.HostAggrementActivity"></activity> -->
+        <!-- <activity android:name=".activity.BankDetialsActivity"></activity> -->
+        <!-- <activity android:name=".activity.SucessUpdateActivity"></activity> -->
         <!-- <activity android:name=".activity.LoginActivity"></activity> -->
         <!-- <activity android:name=".activity.VerificationActivity"></activity> -->
         <!-- <activity android:name=".activity.CategoryActivity"></activity> -->
         <activity android:name=".activity.ProfileSetUpActivity" /> <!-- <activity android:name=".activity.SignupActivity"></activity> -->
         <!-- <activity android:name=".activity.LanguageActivity"></activity> -->
-        <activity android:name=".activity.SucessUpdateActivity">
+        <activity android:name=".activity.MyBookingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
