@@ -19,5 +19,6 @@
     <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra, odio nec volutpat tincidunt, tortor erat imperdiet eros, id gravida nibh mauris eu leo. Curabitur at lacus rutrum, dignissim enim ac, fermentum nunc. Nullam urna ligula, vulputate posuere est eu, luctus tincidunt orci. Nulla posuere lorem non velit pretium accumsan. Praesent ut orci ullamcorper, porta diam tempus, suscipit justo. Etiam aliquet leo eu sapien maximus gravida. Donec faucibus sapien sit amet tellus efficitur, eget finibus mauris tincidunt. Proin at pellentesque erat. Nulla facilisi. Donec sed velit eros. Ut iaculis orci ut urna suscipit, sed dapibus ipsum tempus. Vestibulum sem turpis, luctus eu dignissim nec, aliquam quis augue. Cras venenatis lectus sed lacus ultrices ultricies. Nunc velit odio, egestas vitae tellus et, placerat mattis mauris. Duis ante leo.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_change_location">Map</string>
 
 </resources>
