@@ -363,6 +363,7 @@
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="normal"
+            android:textAllCaps="false"
             app:layout_constraintBottom_toTopOf="@+id/view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

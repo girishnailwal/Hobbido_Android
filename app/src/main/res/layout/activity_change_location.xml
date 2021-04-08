@@ -30,9 +30,19 @@
             tools:context=".MapsActivity" />
 
 
+        <ImageView
+            android:id="@+id/gpsImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/group_37259"
+            app:layout_constraintBottom_toBottomOf="@+id/map"
+            app:layout_constraintEnd_toEndOf="@+id/map" />
 
 
-        <androidx.cardview.widget.CardView
+       <!-- <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,7 +70,7 @@
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>-->
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -105,7 +115,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout8"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,11 +129,11 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins_medium"
-            android:textStyle="normal"
-            android:textSize="15sp"
-            android:textColor="@color/ColorBlack"
             android:lineSpacingExtra="8sp"
             android:text="Your Location"
+            android:textColor="@color/ColorBlack"
+            android:textSize="15sp"
+            android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -134,16 +144,16 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_regular"
-            android:textStyle="normal"
-            android:textSize="13sp"
-            android:textColor="@color/ColorOrange"
             android:lineSpacingExtra="7sp"
-            tools:text="Change"
+            android:textColor="@color/ColorOrange"
+            android:textSize="13sp"
+            android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Change" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/address_et"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -151,18 +161,18 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/edit_text_bg"
             android:ems="10"
-            android:paddingVertical="15dp"
-            android:paddingHorizontal="15dp"
-            android:inputType="textPersonName"
             android:fontFamily="@font/poppins_regular"
-            android:textStyle="normal"
-            android:textSize="15sp"
-            android:textColor="#444251"
+            android:inputType="textPersonName"
             android:lineSpacingExtra="8sp"
-            tools:text="H-146/147, SECTOR 63, NOIDA"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:textColor="#444251"
+            android:textSize="15sp"
+            android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+            app:layout_constraintTop_toBottomOf="@+id/textView35"
+            android:text="H-146/147, SECTOR 63, NOIDA" />
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -177,6 +187,7 @@
             android:backgroundTint="@null"
             android:fontFamily="@font/poppins_semibold"
             android:lineSpacingExtra="9sp"
+            android:textAllCaps="false"
             android:text="Continue"
             android:textColor="#ffffff"
             android:textSize="18sp"
@@ -184,7 +195,7 @@
             app:layout_constraintBottom_toTopOf="@+id/view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_terms"
+            app:layout_constraintTop_toBottomOf="@+id/address_et"
             app:layout_constraintVertical_bias="1.0" />
 
         <View

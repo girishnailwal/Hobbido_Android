@@ -63,7 +63,7 @@ public class RegularActivity extends AppCompatActivity implements View.OnClickLi
 
     private void selectedRegularButton() {
         regular_btn.setTextColor(getResources().getColor(R.color.white));
-        program_btn.setTextColor(Color.parseColor("#7d8088"));
+        program_btn.setTextColor(getResources().getColor(R.color.color_gray_2));
         regular_btn.setBackground(getResources().getDrawable(R.drawable.rounded_purpale_bg));
         program_btn.setBackground(getResources().getDrawable(R.drawable.unselected_gray_btn_bg));
     }
@@ -71,7 +71,8 @@ public class RegularActivity extends AppCompatActivity implements View.OnClickLi
 
     private void selectedProgramButton() {
         program_btn.setTextColor(getResources().getColor(R.color.white));
-        regular_btn.setTextColor(Color.parseColor("#7d8088"));
+        regular_btn.setTextColor(getResources().getColor(R.color.color_gray_2));
+     //   regular_btn.setTextColor(Color.parseColor("#7d8088"));
         regular_btn.setBackground(getResources().getDrawable(R.drawable.unselected_gray_btn_bg));
         program_btn.setBackground(getResources().getDrawable(R.drawable.rounded_orange_bg));
     }
