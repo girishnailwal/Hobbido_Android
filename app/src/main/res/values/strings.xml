@@ -20,5 +20,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_change_location">Map</string>
+    <string name="contact"><u>Contact Us</u></string>
+    <string name="text_header_min">we will be sad to see you go, if we can do anything to change your mind please</string>
+    <string name="content">This will delete your account from our platform and all of your data will be permanently erased. If you still have funds in your walled or unattended sessions please ensure to  use them before proceeding. We will not be able to provide any refunds for unused funds or unattended sessions</string>
 
 </resources>

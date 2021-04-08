@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hobbido.app">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -16,7 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hobbido_and">
-
+        <activity android:name=".SuccessfullActivity"></activity>
+        <activity android:name=".AllTransaction" />
+        <activity android:name=".CreateNewQueryActivity" />
+        <activity android:name=".deleteAccount.DeleteAccountActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -31,8 +33,7 @@
 
         <activity
             android:name=".activity.ChangeLocationActivity"
-            android:label="@string/title_activity_change_location"></activity>
-        <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
+            android:label="@string/title_activity_change_location" /> <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
         <!-- <activity android:name=".activity.NearByActivity"></activity> -->
         <!-- <activity android:name=".activity.RegularActivity"></activity> -->
         <!-- <activity android:name=".activity.HomeActivity"></activity> -->
