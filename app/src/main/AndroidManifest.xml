@@ -46,9 +46,11 @@
         <!-- <activity android:name=".activity.LoginActivity"></activity> -->
         <!-- <activity android:name=".activity.VerificationActivity"></activity> -->
         <!-- <activity android:name=".activity.CategoryActivity"></activity> -->
+        <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
+<!--        -->
         <activity android:name=".activity.ProfileSetUpActivity" /> <!-- <activity android:name=".activity.SignupActivity"></activity> -->
         <!-- <activity android:name=".activity.LanguageActivity"></activity> -->
-        <activity android:name=".activity.MyBookingActivity">
+        <activity android:name=".SuccessfullActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
