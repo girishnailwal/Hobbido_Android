@@ -215,6 +215,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
+
                 <ImageView
                     android:id="@+id/imageView39"
                     android:layout_width="wrap_content"
