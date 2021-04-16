@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/optionNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lineSpacingExtra="9sp"
+        android:text="Option Name"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/editImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/deleteImage"
+        app:layout_constraintEnd_toStartOf="@+id/deleteImage"
+        app:layout_constraintTop_toTopOf="@+id/deleteImage"
+        app:srcCompat="@drawable/draw_3" />
+
+    <ImageView
+        android:id="@+id/deleteImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/optionNameTv"
+        app:srcCompat="@drawable/delete_7" />
+
+    <TextView
+        android:id="@+id/priceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/price_with_rupees"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/optionNameTv"
+        app:layout_constraintTop_toBottomOf="@id/optionNameTv" />
+
+    <TextView
+        android:id="@+id/durationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/duration_with_hours"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/priceTv"
+        app:layout_constraintTop_toBottomOf="@id/priceTv" />
+
+    <TextView
+        android:id="@+id/capacityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/capacity"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/durationTv"
+        app:layout_constraintTop_toBottomOf="@id/durationTv" />
+
+    <TextView
+        android:id="@+id/dateTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lineSpacingExtra="7sp"
+        android:text="Date: 15.02.2021"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/capacityTv"
+        app:layout_constraintTop_toBottomOf="@id/capacityTv" />
+
+    <TextView
+        android:id="@+id/fromTimeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="7sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="5:00 PM - 7:00 PM"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/endTimeTv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/dateTimeTv"
+        app:layout_constraintTop_toBottomOf="@id/dateTimeTv" />
+
+    <TextView
+        android:id="@+id/endTimeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="7sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="7:00 PM - 9:00 PM"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fromTimeTv"
+        app:layout_constraintTop_toTopOf="@id/fromTimeTv" />
+
+    <TextView
+        android:id="@+id/fromTime1Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="7sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="5:00 PM - 7:00 PM"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/endTime1Tv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/fromTimeTv"
+        app:layout_constraintTop_toBottomOf="@id/fromTimeTv" />
+
+    <TextView
+        android:id="@+id/endTime1Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="7sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="7:00 PM - 9:00 PM"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fromTime1Tv"
+        app:layout_constraintTop_toTopOf="@id/fromTime1Tv" />
+
+    <TextView
+        android:id="@+id/dateTime1Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lineSpacingExtra="7sp"
+        android:text="Date: 15.02.2021"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/fromTime1Tv"
+        app:layout_constraintTop_toBottomOf="@id/fromTime1Tv" />
+
+    <TextView
+        android:id="@+id/fromTime2Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="7sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="5:00 PM - 7:00 PM"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/endTime2Tv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/dateTime1Tv"
+        app:layout_constraintTop_toBottomOf="@id/dateTime1Tv" />
+
+    <TextView
+        android:id="@+id/endTime2Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="7sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="7:00 PM - 9:00 PM"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fromTime2Tv"
+        app:layout_constraintTop_toTopOf="@id/fromTime2Tv" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/ColorLightGray"
+        app:layout_constraintTop_toBottomOf="@id/fromTime2Tv"
+        app:layout_constraintStart_toStartOf="@id/fromTime2Tv"
+        app:layout_constraintEnd_toEndOf="@id/endTime2Tv"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

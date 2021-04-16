@@ -10,6 +10,7 @@
     <string name="profile_setup">Profile Setup</string>
     <string name="select_a_minimum_of_3_categories_to_get_you_started">Select a minimum of 3 categories \n to get you started.</string>
     <string name="search_category">Search category</string>
+    <string name="search_location">Search loaction</string>
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="do_not_have_an_account">Don\'t have an account? <b><font color='#672a7a'>Sign Up</font></b></string>
@@ -22,9 +23,27 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_change_location">Map</string>
     <string name="contact"><u>Contact Us</u></string>
+    <string name="rafting_sub_titlte_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis orci massa. Du is pulvinar ante.</string>
     <string name="text_header_min">we will be sad to see you go, if we can do anything to change your mind please</string>
     <string name="content">This will delete your account from our platform and all of your data will be permanently erased. If you still have funds in your walled or unattended sessions please ensure to  use them before proceeding. We will not be able to provide any refunds for unused funds or unattended sessions</string>
     <string name="session_successfully_added_to_cart">Session successfully added \n to cart.</string>
+    <string name="are_you_sure_you_want_to_quit"><font color='#26374b'>Are you sure you want to quit?</font> \n All progress will be lost.</string>
     <string name="added_waiting">Added to waiting list</string>
 
+    <string name="you_cannot_delete_your_account">You cannot delete your account as you have an active host profile.</string>
+
+    <string name="loreum_ipsum_Loreum">Loreum ipsum Loreum ipsumLoreum ipsu Loreum ipsum Loreum ipsum</string>
+    <string name="please_contact_support"><u>Please contact support for more information.</u></string>
+    <string name="list_content_loreum">Loreum ipsum Loreum ipsum Loreum ipsum Loreu ipsum Loreum ipsum. Loreum ipsum Loreum ipsu Loreum ipsum Loreum ipsum Loreum ipsu Loreum ipsum Loreum ipsum Loreum ipsu Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsumLoreum ipsum Loreum ipsum Loreu ipsumLoreum ipsum Loreum ipsumLoreum ipsu Loreum ipsum Loreum ipsum Loreum ipsum.</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry</string>
+    <string name="price_with_rupees">Price: <font color='#26374b'>$10.00</font></string>
+    <string name="duration_with_hours">Duration: <font color='#26374b'>1 Hour</font></string>
+    <string name="capacity">Capacity: <font color='#26374b'>10</font></string>
+    <string name="date_friday"><font color='#26374b'>Date: </font>Friday, 5th 2021, 05:00 PM to 10:00 PM</string>
+    <string name="total_slot"><font color='#26374b'>Total slots: </font>20</string>
+    <string name="available_slot"><font color='#26374b'>Available Slots: </font>18</string>
+    <string name="username"><font color='#26374b'>User Name:  </font>sharadgarg21</string>
+    <string name="numberslots"><font color='#26374b'>Number of Slots:   </font>2</string>
+
+    <string name="username_scanbarcode"><font color='#26374b'>Username: </font>sharadgarg21</string>
 </resources>

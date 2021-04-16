@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create7UploadBannerActivity">
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Step 7 of 7"
+        android:textColor="@color/ColorOrange"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1" />
+
+    <TextView
+        android:id="@+id/addPhotoTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Add photos and videos to your activity listing."
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/steps"
+        app:layout_constraintTop_toBottomOf="@id/steps" />
+
+    <View
+        android:id="@+id/view26"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/ColorLightGray"
+        app:layout_constraintStart_toStartOf="@id/addPhotoTv"
+        app:layout_constraintTop_toBottomOf="@id/addPhotoTv"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/UploadOnlyTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_italic"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:lineSpacingExtra="3sp"
+        android:text="Upload only images in jpeg, jpg, png and videos in mkv, mp4 formats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view26"
+        app:layout_constraintTop_toBottomOf="@id/view26" />
+
+    <ImageView
+        android:id="@+id/uploadImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/group_37161"
+        app:layout_constraintTop_toBottomOf="@id/UploadOnlyTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/UploadOnlyTv"/>
+
+    <TextView
+        android:id="@+id/UploadPhotosTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Upload photos for your activity page(Upto 6)"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/uploadImage"
+        app:layout_constraintTop_toBottomOf="@id/uploadImage" />
+
+    <ImageView
+        android:id="@+id/uploadImage1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/group_37612"
+        app:layout_constraintTop_toBottomOf="@id/UploadPhotosTv"
+        app:layout_constraintStart_toStartOf="@id/UploadPhotosTv"/>
+
+    <TextView
+        android:id="@+id/UploadVideoTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Upload video Max duration is of 30 seconds."
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/uploadImage1"
+        app:layout_constraintTop_toBottomOf="@id/uploadImage1" />
+
+    <ImageView
+        android:id="@+id/uploadVideoImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/group_37613"
+        app:layout_constraintTop_toBottomOf="@id/UploadVideoTv"
+        app:layout_constraintStart_toStartOf="@id/UploadVideoTv"/>
+
+    <TextView
+        android:id="@+id/cancelTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/ColorOrange"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_rounded_bg"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/cancelTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancelTv"
+        app:layout_constraintTop_toTopOf="@+id/cancelTv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

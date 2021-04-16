@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Create2SeekIndicatorActivity">
+
+        <include
+            android:id="@+id/include1"
+            layout="@layout/custom_tool_bar_second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/steps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:lineSpacingExtra="9sp"
+            android:text="Step 2 of 7"
+            android:textColor="@color/ColorOrange"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include1" />
+
+        <TextView
+            android:id="@+id/tittleTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="What users should know before they go."
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/steps"
+            app:layout_constraintTop_toBottomOf="@id/steps" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:padding="10dp"
+            android:text="Description"
+            android:textColor="@color/color_gray_3"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tittleTv"
+            app:layout_constraintTop_toBottomOf="@+id/tittleTv" />
+
+        <TextView
+            android:id="@+id/genderSpecificTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Gender specific"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/descriptionTv"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTv" />
+
+        <CheckBox
+            android:id="@+id/male_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Male"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/female_chbk"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderSpecificTv" />
+
+        <CheckBox
+            android:id="@+id/female_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Female"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/male_chkb"
+            app:layout_constraintEnd_toStartOf="@+id/both_chkb"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/male_chkb"
+            app:layout_constraintTop_toTopOf="@+id/male_chkb" />
+
+        <CheckBox
+            android:id="@+id/both_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Both"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/female_chbk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/female_chbk"
+            app:layout_constraintTop_toTopOf="@+id/female_chbk" />
+        <TextView
+            android:id="@+id/ageRestrictionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Age Restriction "
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/male_chkb" />
+
+        <TextView
+            android:id="@+id/sessionPrivacyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Session Privacy"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ageRestrictionTv" />
+
+        <CheckBox
+            android:id="@+id/private_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Private"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/public_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sessionPrivacyTv" />
+
+        <CheckBox
+            android:id="@+id/public_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="public"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/private_chkb"
+            app:layout_constraintStart_toEndOf="@+id/private_chkb"
+            app:layout_constraintTop_toTopOf="@+id/private_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/instantBookingTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Instant booking"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/private_chkb" />
+
+        <CheckBox
+            android:id="@+id/yes_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Yes"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/no_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instantBookingTv" />
+
+        <CheckBox
+            android:id="@+id/no_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="No"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/yes_chkb"
+            app:layout_constraintStart_toEndOf="@+id/yes_chkb"
+            app:layout_constraintTop_toTopOf="@+id/yes_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/petFriendlyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Pet Friendly"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yes_chkb" />
+
+        <CheckBox
+            android:id="@+id/yes1_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Yes"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/no1_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petFriendlyTv" />
+
+        <CheckBox
+            android:id="@+id/no1_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="No"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/yes1_chkb"
+            app:layout_constraintStart_toEndOf="@+id/yes1_chkb"
+            app:layout_constraintTop_toTopOf="@+id/yes1_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/changingRoomsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Changing Rooms "
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yes1_chkb" />
+
+        <CheckBox
+            android:id="@+id/yes2_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Yes"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/no2_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/changingRoomsTv" />
+
+        <CheckBox
+            android:id="@+id/no2_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="No"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/yes2_chkb"
+            app:layout_constraintStart_toEndOf="@+id/yes2_chkb"
+            app:layout_constraintTop_toTopOf="@+id/yes2_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/restroomsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Restrooms"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yes2_chkb" />
+
+        <CheckBox
+            android:id="@+id/yes3_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Yes"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/no3_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restroomsTv" />
+
+        <CheckBox
+            android:id="@+id/no3_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="No"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/yes3_chkb"
+            app:layout_constraintStart_toEndOf="@+id/yes3_chkb"
+            app:layout_constraintTop_toTopOf="@+id/yes3_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/parkingTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Parking"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yes3_chkb" />
+
+        <CheckBox
+            android:id="@+id/free_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Free"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/paid_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parkingTv" />
+
+        <CheckBox
+            android:id="@+id/paid_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="paid"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/free_chkb"
+            app:layout_constraintStart_toEndOf="@+id/free_chkb"
+            app:layout_constraintTop_toTopOf="@+id/free_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/wheelchairAccessibleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Wheelchair Accessible"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/free_chkb" />
+
+        <CheckBox
+            android:id="@+id/yes4_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Yes"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/no4_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wheelchairAccessibleTv" />
+
+        <CheckBox
+            android:id="@+id/no4_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="No"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/yes4_chkb"
+            app:layout_constraintStart_toEndOf="@+id/yes4_chkb"
+            app:layout_constraintTop_toTopOf="@+id/yes4_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/lockersTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Lockers"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yes4_chkb" />
+
+        <CheckBox
+            android:id="@+id/yes5_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Yes"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/no5_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lockersTv" />
+
+        <CheckBox
+            android:id="@+id/no5_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="No"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/yes5_chkb"
+            app:layout_constraintStart_toEndOf="@+id/yes5_chkb"
+            app:layout_constraintTop_toTopOf="@+id/yes5_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/equipmentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="Equipment"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yes5_chkb" />
+
+        <CheckBox
+            android:id="@+id/included_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Included"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/notIncluded_chbk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/equipmentTv" />
+
+        <CheckBox
+            android:id="@+id/notIncluded_chbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="Not Included"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/included_chkb"
+            app:layout_constraintStart_toEndOf="@+id/included_chkb"
+            app:layout_constraintTop_toTopOf="@+id/included_chkb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/cancelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/poppins_semibold"
+            android:lineSpacingExtra="9sp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/ColorOrange"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@id/included_chkb"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/next_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_rounded_bg"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/poppins_semibold"
+            android:lineSpacingExtra="9sp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/cancelTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cancelTv"
+            app:layout_constraintTop_toTopOf="@+id/cancelTv" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>

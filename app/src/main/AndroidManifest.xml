@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hobbido.app">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -16,7 +15,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hobbido_and">
-
+<!--        <activity android:name=".BankDetails1Activity"></activity>-->
+        <!-- <activity android:name=".Create2SeekIndicatorActivity"></activity> -->
+        <!-- <activity android:name=".Create6ChooseOptionActivity"></activity> -->
+        <!-- <activity android:name=".Create4OptionNameActivity"></activity> -->
+        <!-- <activity android:name=".Create3SearchLocationActivity"></activity> -->
+        <!-- <activity android:name=".Create1Activity"></activity> -->
+        <activity android:name=".ScanBarcodeActivity" /> <!-- <activity android:name=".CurrencyActivity"></activity> -->
+        <!-- <activity android:name=".DistanceActivity"></activity> -->
+        <!-- <activity android:name=".Deposit3Activity"></activity> -->
+        <!-- <activity android:name=".Deposit2Activity"></activity> -->
+        <!-- <activity android:name=".DepositActivity"></activity> -->
+        <!-- <activity android:name=".PaymentMethodActivity"></activity> -->
+        <!-- <activity android:name=".Create4Activity"></activity> -->
+        <activity android:name=".AttendanceListActivity" /> <!-- <activity android:name=".AttendanceList2Activity"></activity> -->
+        <!-- <activity android:name=".CreateActivity3"></activity> -->
+        <!-- <activity android:name=".CongratulationActivity"></activity> -->
+        <!-- <activity android:name=".SetUpCalenderActivity"></activity> -->
+        <!-- <activity android:name=".CreateActivity2"></activity> -->
+        <!-- <activity android:name=".CreateActivity"></activity> -->
+        <!-- <activity android:name=".GeneralActivity"></activity> -->
+        <!-- <activity android:name=".HostProfiles2Activity"></activity> -->
+        <!-- <activity android:name=".QrCodeActivity"></activity> -->
+        <!-- <activity android:name=".HostDeleteAccountActivity"></activity> -->
+        <!-- <activity android:name=".HelpCenterActivity"></activity> -->
+        <!-- <activity android:name=".activity.PaymentDetailsActivity"></activity> -->
+        <!-- <activity android:name=".AppSetting"></activity> -->
+        <!-- <activity android:name=".NotificationActivity"></activity> -->
+        <!-- <activity android:name=".MessageActivity"></activity> -->
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -31,8 +57,7 @@
 
         <activity
             android:name=".activity.ChangeLocationActivity"
-            android:label="@string/title_activity_change_location"></activity>
-        <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
+            android:label="@string/title_activity_change_location" /> <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
         <!-- <activity android:name=".activity.NearByActivity"></activity> -->
         <!-- <activity android:name=".activity.RegularActivity"></activity> -->
         <!-- <activity android:name=".activity.HomeActivity"></activity> -->
@@ -47,10 +72,10 @@
         <!-- <activity android:name=".activity.VerificationActivity"></activity> -->
         <!-- <activity android:name=".activity.CategoryActivity"></activity> -->
         <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
-<!--        -->
+        <!--  -->
         <activity android:name=".activity.ProfileSetUpActivity" /> <!-- <activity android:name=".activity.SignupActivity"></activity> -->
         <!-- <activity android:name=".activity.LanguageActivity"></activity> -->
-        <activity android:name=".SuccessfullActivity">
+        <activity android:name=".BankDetails1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

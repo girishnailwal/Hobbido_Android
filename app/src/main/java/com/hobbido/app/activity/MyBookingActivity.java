@@ -14,6 +14,7 @@ import com.hobbido.app.R;
 import com.hobbido.app.fragment.HistoryFragment;
 import com.hobbido.app.fragment.PhoneNumberFragment;
 import com.hobbido.app.fragment.RegularFragment;
+import com.hobbido.app.fragment.RiverRaftingFragment;
 import com.hobbido.app.fragment.UpComingFragment;
 import com.hobbido.app.fragment.WaitingListFragment;
 

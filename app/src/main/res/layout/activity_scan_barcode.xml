@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanBarcodeActivity">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image48"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/checked_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="22sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/ColorPurpleDark"
+        android:lineSpacingExtra="11sp"
+        android:gravity="center_horizontal"
+        android:text="Valid"
+        app:layout_constraintStart_toStartOf="@id/image48"
+        app:layout_constraintEnd_toEndOf="@id/image48"
+        app:layout_constraintTop_toBottomOf="@id/image48"/>
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="7sp"
+        android:text="Activity Name Activity Name Activity Name "
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/optionNameATv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="9sp"
+        android:text="Option Name A"
+        app:layout_constraintStart_toStartOf="@id/sub_title"
+        app:layout_constraintEnd_toEndOf="@id/sub_title"
+        app:layout_constraintTop_toBottomOf="@id/sub_title"/>
+
+    <TextView
+        android:id="@+id/usernameATv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/username_scanbarcode"
+        app:layout_constraintStart_toStartOf="@id/optionNameATv"
+        app:layout_constraintEnd_toEndOf="@id/optionNameATv"
+        app:layout_constraintTop_toBottomOf="@id/optionNameATv"/>
+
+    <TextView
+        android:id="@+id/numberSlotsTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/numberslots"
+        app:layout_constraintStart_toStartOf="@id/usernameATv"
+        app:layout_constraintEnd_toEndOf="@id/usernameATv"
+        app:layout_constraintTop_toBottomOf="@id/usernameATv"/>
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/date_friday"
+        app:layout_constraintStart_toStartOf="@id/numberSlotsTv"
+        app:layout_constraintEnd_toEndOf="@id/numberSlotsTv"
+        app:layout_constraintTop_toBottomOf="@id/numberSlotsTv"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create6ChooseOptionActivity">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Step 6 of 7"
+        android:textColor="@color/ColorOrange"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1" />
+
+    <TextView
+        android:id="@+id/createDiscountTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Create a discount package."
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/steps"
+        app:layout_constraintTop_toBottomOf="@id/steps" />
+
+    <View
+        android:id="@+id/view27"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/ColorLightGray"
+        app:layout_constraintStart_toStartOf="@id/createDiscountTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/createDiscountTv"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view27">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/edit_text_bg"
+            android:elevation="1dp">
+
+            <Spinner
+                android:id="@+id/chooseAnOptionTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="Select your Company Name"
+                android:background="@drawable/edit_text_bg"
+                android:overlapAnchor="false">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/chooseAnOptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:drawableRight="@drawable/xmlid_225"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Choose an option"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/ColorBlack"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editPackageName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:hint="Package Name"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="15sp"
+        android:backgroundTint="@null"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_first"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_first" />
+
+    <EditText
+        android:id="@+id/editSessions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:hint="Sessions"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="15sp"
+        android:backgroundTint="@null"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/editPackageName"
+        app:layout_constraintTop_toBottomOf="@id/editPackageName" />
+
+    <TextView
+        android:id="@+id/circle_minus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/option_bottom_sheet_round_bg"
+        android:gravity="center_horizontal"
+        android:text="-"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tv_value1"
+        app:layout_constraintEnd_toStartOf="@id/tv_value1"
+        app:layout_constraintTop_toTopOf="@id/tv_value1" />
+
+    <TextView
+        android:id="@+id/tv_value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="2dp"
+        android:text="2"
+        android:textColor="@color/text_color"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/circle_plus1"
+        app:layout_constraintEnd_toStartOf="@id/circle_plus1"
+        app:layout_constraintTop_toTopOf="@id/circle_plus1" />
+
+    <TextView
+        android:id="@+id/circle_plus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/option_bottom_sheet_round_bg"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/editSessions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editSessions" />
+
+
+    <EditText
+        android:id="@+id/editDiscountAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:hint="Discount Amount"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="15sp"
+        android:backgroundTint="@null"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/editSessions"
+        app:layout_constraintTop_toBottomOf="@id/editSessions" />
+
+    <ImageView
+        android:id="@+id/plusImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editDiscountAmount"
+        app:srcCompat="@drawable/plus_3" />
+
+    <TextView
+        android:id="@+id/cancelTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/ColorOrange"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_rounded_bg"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/cancelTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancelTv"
+        app:layout_constraintTop_toTopOf="@+id/cancelTv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

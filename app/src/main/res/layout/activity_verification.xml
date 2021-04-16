@@ -118,7 +118,7 @@
         android:lineSpacingExtra="9sp"
         android:text="Next"
         android:textAllCaps="false"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/view"

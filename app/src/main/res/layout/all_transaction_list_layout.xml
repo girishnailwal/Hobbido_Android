@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -19,8 +19,7 @@
         android:textSize="13sp"
         android:textColor="@color/text_color"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/back_forward_icon"
@@ -30,8 +29,7 @@
         android:layout_marginStart="14dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_date"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/tv_date"/>
 
     <TextView
         android:id="@+id/tv_transferred_payout"
@@ -42,10 +40,9 @@
         android:textColor="@color/text_color"
         android:fontFamily="@font/poppins_regular"
         android:layout_marginLeft="10dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_date"
         app:layout_constraintStart_toEndOf="@id/back_forward_icon"
         app:layout_constraintTop_toTopOf="@id/back_forward_icon"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="@id/back_forward_icon"/>
     <TextView
         android:id="@+id/tv_rupees"
         android:layout_width="wrap_content"
@@ -55,10 +52,9 @@
         android:textColor="@color/ColorRed"
         android:fontFamily="@font/poppins_medium"
         android:layout_marginRight="10dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        app:layout_constraintBottom_toBottomOf="@id/tv_transferred_payout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/back_forward_icon"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="@id/tv_transferred_payout" />
 
     <TextView
         android:id="@+id/tv_time"
@@ -68,22 +64,19 @@
         android:textSize="9sp"
         android:textColor="@color/edit_text_hint_color"
         android:fontFamily="@font/poppins_regular"
-        android:layout_marginLeft="10dp"
         app:layout_constraintTop_toBottomOf="@id/tv_transferred_payout"
-        app:layout_constraintStart_toEndOf="@id/back_forward_icon"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="@id/tv_transferred_payout" />
 
     <View
-        android:layout_width="fill_parent"
+        android:layout_width="0dp"
         android:layout_height="1dp"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/ColorLightGray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/tv_time"
-        app:layout_constraintTop_toBottomOf="@id/tv_time"
-        tools:ignore="MissingConstraints"></View>
+        app:layout_constraintTop_toBottomOf="@id/tv_time"></View>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

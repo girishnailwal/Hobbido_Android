@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create1Activity">
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Step 1 of 7"
+        android:textColor="@color/ColorOrange"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1" />
+
+    <TextView
+        android:id="@+id/ChooseTypeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Choose the type of your listing"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/steps"
+        app:layout_constraintTop_toBottomOf="@id/steps" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ChooseTypeTv"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseTypeTv">
+
+        <RadioButton
+            android:id="@+id/radio_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Regular"
+            android:textColor="@color/ColorPurpleDark"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <RadioButton
+            android:id="@+id/radio_program"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Program"
+            android:textColor="@color/edit_text_hint_color"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/letsStartTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Let's start by giving the activity a name"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup2" />
+
+    <EditText
+        android:id="@+id/editActiveName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:hint="Activity Name"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="15sp"
+        android:backgroundTint="@null"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/letsStartTv"
+        app:layout_constraintTop_toBottomOf="@id/letsStartTv" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editActiveName"
+        app:layout_constraintTop_toBottomOf="@+id/editActiveName">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/edit_text_bg"
+            android:elevation="1dp">
+
+            <Spinner
+                android:id="@+id/selectCategorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="Select your Company Name"
+                android:background="@drawable/edit_text_bg"
+                android:overlapAnchor="false">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/recipeTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:drawableRight="@drawable/xmlid_225"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Select a category"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/ColorBlack"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_first"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_first">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/edit_text_bg"
+            android:elevation="1dp">
+
+            <Spinner
+                android:id="@+id/selectSubCategorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="Select your Company Name"
+                android:background="@drawable/edit_text_bg"
+                android:overlapAnchor="false">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:drawableRight="@drawable/xmlid_225"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Select a sub-category"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/ColorBlack"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancelTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/ColorOrange"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_rounded_bg"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/cancelTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancelTv"
+        app:layout_constraintTop_toTopOf="@+id/cancelTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
