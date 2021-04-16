@@ -7,10 +7,95 @@
     tools:context=".activity.UpdateGender">
 
     <include
-        android:id="@+id/custom_toolbar"
+        android:id="@+id/include1"
         layout="@layout/custom_tool_bar_second"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="normal"
+        android:textSize="22sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="11sp"
+        android:gravity="center_horizontal"
+        android:text="Update Gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1"/>
+
+    <ImageView
+        android:id="@+id/maleImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/group_37320"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTv"/>
+
+    <ImageView
+        android:id="@+id/femaleImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/group_37321"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maleImageView"/>
+
+    <ImageView
+        android:id="@+id/otherImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/group_37322"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/femaleImageView"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_rounded_bg"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/view28"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view28"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bottom_line_bg"
+        app:layout_constraintStart_toStartOf="@id/updateButton"
+        app:layout_constraintEnd_toEndOf="@id/updateButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,8 @@
     <string name="added_waiting">Added to waiting list</string>
 
     <string name="you_cannot_delete_your_account">You cannot delete your account as you have an active host profile.</string>
-
+    <string name="you_still_have_hunderd">You still have <font color='#ff8400'>$10.00</font> in your wallet and unattended sessions
+        \n Are you sure you want to continue? </string>
     <string name="loreum_ipsum_Loreum">Loreum ipsum Loreum ipsumLoreum ipsu Loreum ipsum Loreum ipsum</string>
     <string name="please_contact_support"><u>Please contact support for more information.</u></string>
     <string name="list_content_loreum">Loreum ipsum Loreum ipsum Loreum ipsum Loreu ipsum Loreum ipsum. Loreum ipsum Loreum ipsu Loreum ipsum Loreum ipsum Loreum ipsu Loreum ipsum Loreum ipsum Loreum ipsu Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsumLoreum ipsum Loreum ipsum Loreu ipsumLoreum ipsum Loreum ipsumLoreum ipsu Loreum ipsum Loreum ipsum Loreum ipsum.</string>

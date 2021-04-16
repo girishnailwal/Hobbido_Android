@@ -9,6 +9,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.hobbido.app.dialog.CustomConfirmDialog;
+import com.hobbido.app.listener.DialogButtonListener;
+
 public class BankDetails1Activity extends AppCompatActivity implements View.OnClickListener {
     ImageView back_img,menu_img;
     TextView tv_title;
@@ -47,7 +50,17 @@ public class BankDetails1Activity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.changeButton:
+                showCustomConfirmDialog();
                 break;
         }
+    }
+
+    private void showCustomConfirmDialog() {
+        new CustomConfirmDialog(this, new DialogButtonListener() {
+            @Override
+            public void onButtonClicked() {
+
+            }
+        }).show();
     }
 }

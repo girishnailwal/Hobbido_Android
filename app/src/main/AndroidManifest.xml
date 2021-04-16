@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hobbido_and">
-<!--        <activity android:name=".BankDetails1Activity"></activity>-->
+<!--        <activity android:name=".SearchActivity"></activity>-->
+        <!-- <activity android:name=".BankDetails1Activity"></activity> -->
         <!-- <activity android:name=".Create2SeekIndicatorActivity"></activity> -->
         <!-- <activity android:name=".Create6ChooseOptionActivity"></activity> -->
         <!-- <activity android:name=".Create4OptionNameActivity"></activity> -->
@@ -75,7 +76,7 @@
         <!--  -->
         <activity android:name=".activity.ProfileSetUpActivity" /> <!-- <activity android:name=".activity.SignupActivity"></activity> -->
         <!-- <activity android:name=".activity.LanguageActivity"></activity> -->
-        <activity android:name=".BankDetails1Activity">
+        <activity android:name=".activity.UpdateGender">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
