@@ -14,9 +14,18 @@
         <!-- Customize your theme here. -->
         <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
 
+        <!--Bottom sheet rounded corner-->
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
     </style>
 
 
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_bg</item>
+    </style>
 
     <style name="editTextStyle" parent="@style/Widget.AppCompat.EditText">
         <item name="android:background">@null</item>
@@ -30,11 +39,32 @@
     </style>
 
 
-    <style name="menu_text_style" parent="Theme.Hobbido_and">
+    <!--<style name="menu_text_style" parent="Theme.Hobbido_and">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>-->
+
+
+    <style name="menu_text_style" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/MyBottomNavigationView.TextAppearance</item>
+        <item name="itemTextAppearanceInactive">@style/MyBottomNavigationView.TextAppearance</item>
+    </style>
+
+    <style name="MyBottomNavigationView.TextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
     </style>
 
 
+    <style name="customCheckboxStyle" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+
+
+    <style name="customRadioButtonStyle" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:button">@drawable/radio_button_selector</item>
+    </style>
 
 </resources>
