@@ -100,8 +100,7 @@
                     android:id="@+id/view21"
                     android:layout_width="1dp"
                     android:layout_height="0dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@color/ColorLightGray"
@@ -138,8 +137,8 @@
                 app:layout_constraintTop_toTopOf="parent">
 
 
-                <ImageView
-                    android:id="@+id/imageView5"
+                <!--<ImageView
+                    android:id="@+id/countryCodePicker"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -148,18 +147,43 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/united_states" />
+                    app:srcCompat="@drawable/united_states" />-->
+
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCodePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:ccpDialog_backgroundColor="@color/white"
+                    app:ccpDialog_textColor="@color/ColorBlack"
+                    app:ccp_arrowColor="@color/ColorBlack"
+                    app:ccp_arrowSize="10dp"
+                    app:ccp_contentColor="@color/ColorBlack"
+                    app:ccp_defaultNameCode="US"
+                    app:ccp_padding="0dp"
+                    app:ccp_showArrow="true"
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="false"
+                    app:ccp_textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
 
                 <View
                     android:id="@+id/view2"
                     android:layout_width="1dp"
                     android:layout_height="0dp"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@color/ColorLightGray"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintStart_toEndOf="@+id/countryCodePicker"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
@@ -195,7 +219,7 @@
                     android:id="@+id/imageView41"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -207,7 +231,7 @@
                     android:id="@+id/view23"
                     android:layout_width="1dp"
                     android:layout_height="0dp"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@color/ColorLightGray"
@@ -215,7 +239,7 @@
                     app:layout_constraintStart_toEndOf="@+id/imageView41"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <EditText
+                <!--<EditText
                     android:id="@+id/editTextTextPersonName"
                     style="@style/editTextStyle"
                     android:layout_width="0dp"
@@ -230,18 +254,22 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/view23"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent" />-->
 
 
-                <!--<com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/pTIL"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="5dp"
-                    android:hint="Password"
-                    app:errorEnabled="true"
-                    android:textStyle="normal"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="8dp"
+                    app:boxStrokeColor="#FFF"
+                    app:boxStrokeWidth="0dp"
+                    app:boxBackgroundColor="#FFF"
+                    app:passwordToggleEnabled="true"
                     app:endIconMode="password_toggle"
+                    app:passwordToggleDrawable="@drawable/show_password_selector"
+                    app:passwordToggleTint="@color/ColorOrange"
+                    android:textColorHint="@color/edit_text_color"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/view23"
@@ -249,13 +277,17 @@
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
-                        style="@style/editTextStyle"
+                        android:id="@+id/passwordEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@null"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
-                </com.google.android.material.textfield.TextInputLayout>-->
+                        app:boxBackgroundColor="@color/white"
+                        android:layout_marginVertical="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:inputType="textPassword"
+                        android:textColor="@color/ColorLightBlack"
+                        android:padding="13dp"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -289,7 +321,7 @@
                     android:id="@+id/cp_view"
                     android:layout_width="1dp"
                     android:layout_height="0dp"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@color/ColorLightGray"
@@ -354,18 +386,19 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="32dp"
             android:background="@drawable/btn_rounded_bg"
             android:backgroundTint="@null"
             android:fontFamily="@font/poppins_semibold"
             android:lineSpacingExtra="9sp"
             android:text="Continue"
+            android:textAllCaps="false"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="normal"
-            android:textAllCaps="false"
             app:layout_constraintBottom_toTopOf="@+id/view"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_terms"
             app:layout_constraintVertical_bias="1.0" />

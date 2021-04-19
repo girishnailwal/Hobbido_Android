@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DetailsFragment">
+
+
+    <ImageView
+        android:id="@+id/first_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/group_37711"
+        app:layout_constraintEnd_toStartOf="@+id/second_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/second_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_37342"
+        app:layout_constraintBottom_toBottomOf="@+id/first_img"
+        app:layout_constraintEnd_toStartOf="@+id/three_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/first_img"
+        app:layout_constraintTop_toTopOf="@+id/first_img" />
+
+    <ImageView
+        android:id="@+id/three_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_37712"
+        app:layout_constraintBottom_toBottomOf="@+id/second_img"
+        app:layout_constraintEnd_toStartOf="@+id/four_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/second_img"
+        app:layout_constraintTop_toTopOf="@+id/second_img" />
+
+    <ImageView
+        android:id="@+id/four_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_37713"
+        app:layout_constraintBottom_toBottomOf="@+id/three_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/three_img"
+        app:layout_constraintTop_toTopOf="@+id/three_img" />
+
+    <ImageView
+        android:id="@+id/five_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/group_37715"
+        app:layout_constraintEnd_toStartOf="@+id/six_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_img" />
+
+    <ImageView
+        android:id="@+id/six_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_37716"
+        app:layout_constraintBottom_toBottomOf="@+id/five_img"
+        app:layout_constraintEnd_toStartOf="@+id/seven_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/five_img"
+        app:layout_constraintTop_toTopOf="@+id/five_img" />
+
+    <ImageView
+        android:id="@+id/seven_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_37717"
+        app:layout_constraintBottom_toBottomOf="@+id/six_img"
+        app:layout_constraintEnd_toStartOf="@+id/eight_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/six_img"
+        app:layout_constraintTop_toTopOf="@+id/six_img" />
+
+    <ImageView
+        android:id="@+id/eight_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_37718"
+        app:layout_constraintBottom_toBottomOf="@+id/seven_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/seven_img"
+        app:layout_constraintTop_toTopOf="@+id/seven_img" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lineSpacingExtra="8sp"
+        android:text="Location"
+        android:textColor="@color/ColorLightBlack"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/five_img" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:drawableLeft="@drawable/ellipse_69"
+        android:drawablePadding="10dp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="@color/ColorLightBlack"
+        android:lineSpacingExtra="7sp"
+        android:text="H-146/147, Noida 201301"
+        app:layout_constraintStart_toStartOf="@+id/tv_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53"
+        tools:context=".MapsActivity" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_37258"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/map" />
+
+
+
+    <TextView
+        android:id="@+id/view_direction_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/light_purpal_rounded_bg"
+        android:drawableLeft="@drawable/path_2583"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="-9sp"
+        android:padding="5dp"
+        android:text="View Direction"
+        android:textColor="@color/ColorPurpleDark"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/ColorLightBlack"
+        android:lineSpacingExtra="8sp"
+        android:text="Special Instructions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="7sp"
+        android:textColor="#26374b"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView54"
+        app:layout_constraintTop_toBottomOf="@+id/textView54"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis orci massa. Duis pulvinar ante quis mi volutpat, non con val lis turpis semper." />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

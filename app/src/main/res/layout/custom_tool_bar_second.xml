@@ -32,15 +32,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:textStyle="normal"
-        android:textSize="22sp"
-        android:textColor="#26374b"
-        android:lineSpacingExtra="11sp"
         android:gravity="center_horizontal"
+        android:lineSpacingExtra="11sp"
         android:text="Title Here"
+        android:textColor="#26374b"
+        android:textSize="22sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/menu_img"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/back_img"
+        app:layout_constraintStart_toEndOf="@+id/back_img"
         app:layout_constraintTop_toTopOf="@+id/menu_img" />
 
 

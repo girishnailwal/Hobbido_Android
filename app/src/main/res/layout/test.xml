@@ -7,226 +7,24 @@
     android:layout_height="match_parent">
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodePicker"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/white_rounded_bg"
-        android:elevation="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cover_img"
+        android:layout_marginTop="32dp"
+        app:ccpDialog_backgroundColor="@color/white"
+        app:ccpDialog_textColor="@color/ColorBlack"
+        app:ccp_arrowColor="@color/ColorBlack"
+        app:ccp_contentColor="@color/ColorBlack"
+        app:ccp_defaultNameCode="US"
+        app:ccp_showFlag="true"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="false"
+        app:ccp_textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cover_img"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-                <TextView
-                    android:id="@+id/textView38"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:lineSpacingExtra="9sp"
-                    android:text="River Rafting"
-                    android:textColor="#353b48"
-                    android:textSize="18sp"
-                    android:textStyle="normal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-                <RatingBar
-                    android:id="@+id/ratingBar"
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:isIndicator="true"
-                    android:numStars="5"
-                    android:progressTint="#FFCC01"
-                    android:rating="4"
-                    android:stepSize="1"
-                    app:layout_constraintStart_toStartOf="@+id/textView38"
-                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:lineSpacingExtra="4sp"
-                    android:textColor="@color/ColorLightBlack"
-                    android:textSize="14sp"
-                    android:textStyle="normal"
-                    app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
-                    app:layout_constraintStart_toEndOf="@+id/ratingBar"
-                    app:layout_constraintTop_toBottomOf="@+id/textView38"
-                    tools:text="1.3K" />
-
-                <View
-                    android:id="@+id/view6"
-                    android:layout_width="1dp"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="8dp"
-                    android:background="@color/ColorLightGray"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView42"
-                    app:layout_constraintStart_toEndOf="@+id/textView42"
-                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
-
-                <TextView
-                    android:id="@+id/textView43"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:drawableLeft="@drawable/path_10486"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:lineSpacingExtra="4sp"
-                    android:text="5 km"
-                    android:textColor="#353b48"
-                    android:textSize="14sp"
-                    android:textStyle="normal"
-                    app:layout_constraintBottom_toBottomOf="@+id/view6"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/view6"
-                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
-
-                <TextView
-                    android:id="@+id/textView44"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:lineSpacingExtra="13sp"
-                    android:text="Regular"
-                    android:textColor="@color/ColorPurpleDark"
-                    android:textSize="14sp"
-                    android:textStyle="normal"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
-
-                <View
-                    android:id="@+id/view7"
-                    android:layout_width="1dp"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="8dp"
-                    android:background="@color/ColorLightGray"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView44"
-                    app:layout_constraintStart_toEndOf="@+id/textView44"
-                    app:layout_constraintTop_toTopOf="@+id/textView44" />
-
-                <TextView
-                    android:id="@+id/textView45"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:lineSpacingExtra="13sp"
-                    android:text="Private"
-                    android:textColor="#d0d7e6"
-                    android:textSize="14sp"
-                    android:textStyle="normal"
-                    app:layout_constraintBottom_toBottomOf="@+id/view7"
-                    app:layout_constraintStart_toEndOf="@+id/view7"
-                    app:layout_constraintTop_toTopOf="@+id/view7" />
-
-                <TextView
-                    android:id="@+id/textView46"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:lineSpacingExtra="14sp"
-                    android:text="Category Name"
-                    android:textColor="@color/ColorLightBlack"
-                    android:textSize="13sp"
-                    android:textStyle="normal"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
-
-                <TextView
-                    android:id="@+id/textView47"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:lineSpacingExtra="14sp"
-                    android:text="Sub Category Name"
-                    android:textColor="@color/ColorLightBlack"
-                    android:textSize="13sp"
-                    android:textStyle="normal"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView46" />
-
-                <TextView
-                    android:id="@+id/textView48"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:drawableLeft="@drawable/age"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:lineSpacingExtra="4sp"
-                    android:text="18 - 25"
-                    android:textColor="@color/ColorOrange"
-                    android:textSize="13sp"
-                    android:textStyle="normal"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView47" />
-
-                <ImageView
-                    android:id="@+id/imageView39"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView43"
-                    app:srcCompat="@drawable/ellipse_72" />
-
-                <TextView
-                    android:id="@+id/textView49"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:lineSpacingExtra="17sp"
-                    android:text="Message"
-                    android:textColor="@color/ColorOrange"
-                    android:textSize="10sp"
-                    android:textStyle="normal"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView39"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView39" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

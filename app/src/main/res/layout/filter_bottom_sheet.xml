@@ -276,6 +276,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="0dp"
+        android:button="@drawable/checkbox_selector"
+        android:paddingLeft="10dp"
         android:fontFamily="@font/poppins_regular"
         android:lineSpacingExtra="7sp"
         android:text="Male"
@@ -302,8 +304,10 @@
 
     <CheckBox
         android:id="@+id/regular_chkb"
+        style="@style/customCheckboxStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:fontFamily="@font/poppins_regular"
         android:lineSpacingExtra="7sp"
         android:text="Regular"
@@ -312,13 +316,17 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toStartOf="@+id/program_chbk"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/tv_type"
         app:layout_constraintTop_toBottomOf="@+id/tv_type" />
 
     <CheckBox
         android:id="@+id/program_chbk"
+        style="@style/customCheckboxStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="@font/poppins_regular"
         android:lineSpacingExtra="7sp"
         android:text="Program"
@@ -333,8 +341,10 @@
 
     <CheckBox
         android:id="@+id/package_chkb"
+        style="@style/customCheckboxStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/poppins_regular"
         android:lineSpacingExtra="7sp"
         android:text="Package"
@@ -369,6 +379,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_privacy">
@@ -378,25 +389,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_regular"
-            android:lineSpacingExtra="7sp"
-            android:onClick="onRadioButtonClicked"
+            style="@style/customRadioButtonStyle"
             android:text="Private"
-            android:textColor="#672a7a"
+            android:textColor="@color/ColorPurpleDark"
             android:textSize="14sp"
-            android:textStyle="normal" />
+            />
 
         <RadioButton
             android:id="@+id/radio_ninjas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            style="@style/customRadioButtonStyle"
             android:fontFamily="@font/poppins_regular"
-            android:lineSpacingExtra="7sp"
-            android:onClick="onRadioButtonClicked"
-            android:text="Private"
-            android:textColor="#672a7a"
-            android:textSize="14sp"
-            android:textStyle="normal" />
+            android:text="Public"
+            android:textColor="#26374b"
+           />
     </RadioGroup>
 
     <androidx.appcompat.widget.AppCompatButton

@@ -4,22 +4,19 @@
     >
     <item
         android:id="@+id/home"
-        android:icon="@drawable/h"
         android:title="Home"
-        app:itemTextAppearance="@style/menu_text_style"
+        android:icon="@drawable/home_selector"
        />
     <item
         android:enabled="false"
         android:id="@+id/profile"
         android:icon="@drawable/h"
         android:title="Profile"
-        app:itemTextAppearance="@style/menu_text_style"
        />
     <item
-        android:id="@+id/saved"
-        android:icon="@drawable/category_icon"
+        android:id="@+id/category"
+        android:icon="@drawable/category_selector"
         android:title="Categories"
-        app:itemTextAppearance="@style/menu_text_style"
         />
 
 </menu>
