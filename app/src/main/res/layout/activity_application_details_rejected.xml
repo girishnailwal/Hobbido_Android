@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.ApplicationDetailsActivity">
+
+
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/light_red_rounded_bg"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_toolbar">
+
+        <TextView
+            android:id="@+id/applicationStatusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="8sp"
+            android:text="Application Status"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/rejectedTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="16sp"
+            android:gravity="center_horizontal"
+            android:text="Rejected"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/applicationStatusTv" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/applicationIdTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="9sp"
+        android:text="Application ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/IdTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:lineSpacingExtra="9sp"
+        android:text="ID#1234"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/applicationIdTv"
+        app:layout_constraintTop_toBottomOf="@+id/applicationIdTv" />
+
+    <TextView
+        android:id="@+id/submittedOnTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="9sp"
+        android:text="Submitted On"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/IdTv"
+        app:layout_constraintTop_toBottomOf="@+id/IdTv" />
+
+    <TextView
+        android:id="@+id/dateMonthTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:lineSpacingExtra="9sp"
+        android:text="Jan 18, 16:00"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/submittedOnTv"
+        app:layout_constraintTop_toBottomOf="@+id/submittedOnTv" />
+
+    <TextView
+        android:id="@+id/verificationDocTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="9sp"
+        android:text="Verification Documents"
+        android:background="@color/ColorLightGray"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="15dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="@+id/dateMonthTv"
+        app:layout_constraintTop_toBottomOf="@+id/dateMonthTv" />
+
+    <ImageView
+        android:id="@+id/documentImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/group_37482"
+        app:layout_constraintEnd_toStartOf="@id/reSubmitDocTv"
+        app:layout_constraintStart_toStartOf="@+id/verificationDocTv"
+        app:layout_constraintTop_toBottomOf="@+id/verificationDocTv"/>
+
+        <TextView
+            android:id="@+id/reSubmitDocTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/icon_feather_edit"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="@string/re_submit_documents"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@id/subTittleTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/documentImageView" />
+
+    <TextView
+        android:id="@+id/subTittleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/lorem_ipsum_is_simply_dummy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/documentImageView"/>
+
+    <TextView
+        android:id="@+id/rejectionReasonTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="9sp"
+        android:text="Rejection Reason"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/subTittleTv"
+        app:layout_constraintTop_toBottomOf="@+id/subTittleTv" />
+
+    <TextView
+        android:id="@+id/subTittle1Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/lorem_ipsum_is_simply_dummy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rejectionReasonTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rejectionReasonTv"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NotificationManageActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="10sp"
+        android:text="Manage Notifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_toolbar"/>
+
+    <TextView
+        android:id="@+id/appNotificationTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/Color_app_textview"
+        android:lineSpacingExtra="9sp"
+        android:text="App notification"
+        android:background="@color/light_gray_4"
+        android:drawableEnd="@drawable/arrow_up"
+        android:drawablePadding="10dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTv"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_gray_4"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appNotificationTv">
+
+        <TextView
+            android:id="@+id/bookingCancellationsTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/Color_app_textview"
+            android:lineSpacingExtra="9sp"
+            android:text="Booking Cancellations"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/switchImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:srcCompat="@drawable/group_37338"
+            app:layout_constraintBottom_toBottomOf="@id/bookingCancellationsTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bookingCancellationsTv" />
+
+        <View
+            android:id="@+id/view34"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/edit_text_hint_color"
+            app:layout_constraintEnd_toEndOf="@id/switchImageView"
+            app:layout_constraintTop_toBottomOf="@id/bookingCancellationsTv"
+            app:layout_constraintStart_toStartOf="@id/bookingCancellationsTv"/>
+        <TextView
+            android:id="@+id/activityChangeAlertTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="@color/Color_app_textview"
+            android:lineSpacingExtra="9sp"
+            android:layout_marginTop="24dp"
+            android:text="Activity Change Alert"
+            app:layout_constraintStart_toStartOf="@+id/view34"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view34"/>
+
+        <ImageView
+            android:id="@+id/switchImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:srcCompat="@drawable/group_37336"
+            app:layout_constraintBottom_toBottomOf="@id/activityChangeAlertTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/activityChangeAlertTv" />
+
+        <View
+            android:id="@+id/view35"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/edit_text_hint_color"
+            app:layout_constraintEnd_toEndOf="@id/switchImageView1"
+            app:layout_constraintTop_toBottomOf="@id/activityChangeAlertTv"
+            app:layout_constraintStart_toStartOf="@id/activityChangeAlertTv"/>
+
+        <TextView
+            android:id="@+id/promotionOfferTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="@color/Color_app_textview"
+            android:lineSpacingExtra="9sp"
+            android:layout_marginTop="24dp"
+            android:text="Promotions and Offers"
+            app:layout_constraintStart_toStartOf="@+id/view35"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view35"/>
+
+        <ImageView
+            android:id="@+id/switchImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:srcCompat="@drawable/group_37338"
+            app:layout_constraintBottom_toBottomOf="@id/promotionOfferTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/promotionOfferTv" />
+
+        <View
+            android:id="@+id/view36"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/edit_text_hint_color"
+            app:layout_constraintEnd_toEndOf="@id/switchImageView1"
+            app:layout_constraintTop_toBottomOf="@id/promotionOfferTv"
+            app:layout_constraintStart_toStartOf="@id/promotionOfferTv"/>
+
+        <TextView
+            android:id="@+id/nearbyActivitiesTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/Color_app_textview"
+            android:lineSpacingExtra="9sp"
+            android:layout_marginTop="24dp"
+            android:text="Nearby Activities"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view36"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view36"/>
+
+        <ImageView
+            android:id="@+id/switchImageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:srcCompat="@drawable/group_37338"
+            app:layout_constraintBottom_toBottomOf="@id/nearbyActivitiesTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/nearbyActivitiesTv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/emailNotificationsTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/Color_app_textview"
+        android:lineSpacingExtra="9sp"
+        android:text="Email notifications"
+        android:background="@color/light_gray_4"
+        android:drawableEnd="@drawable/icon_feather_chevron_down1"
+        android:drawablePadding="10dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_rounded_bg"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

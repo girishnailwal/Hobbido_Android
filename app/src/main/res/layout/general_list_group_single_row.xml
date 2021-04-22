@@ -15,10 +15,10 @@
         android:textSize="13sp"
         android:layout_marginStart="8dp"
         android:paddingVertical="10dp"
-        android:paddingHorizontal="10dp"
+        android:paddingHorizontal="15dp"
         android:textColor="@color/text_color"
         android:lineSpacingExtra="7sp"
-        android:text="@string/loreum_ipsum_Loreum"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"></TextView>

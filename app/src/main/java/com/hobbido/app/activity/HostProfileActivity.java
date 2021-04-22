@@ -5,9 +5,11 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -18,22 +20,28 @@ import com.hobbido.app.fragment.PhoneNumberFragment;
 import com.hobbido.app.fragment.ProgramFragment;
 import com.hobbido.app.fragment.RegularFragment;
 
-public class HostProfileActivity extends AppCompatActivity implements View.OnClickListener {
+public class HostProfileActivity extends BaseActivity implements View.OnClickListener {
     ImageView back_img , menu_img;
     TextView tv_title;
     Button regular_btn,program_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_host_profile);
+        /*setContentView(R.layout.activity_host_profile);*/
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View contentView = inflater.inflate(R.layout.activity_host_profile, null, false);
+        drawerLayout.addView(contentView, 0);
+
         initView();
         showRegularFragment();
     }
 
     public void initView(){
         back_img = findViewById(R.id.back_img);
+        back_img.setOnClickListener(this);
         back_img.setImageResource(R.drawable.back_4);
         menu_img = findViewById(R.id.menu_img);
+        menu_img.setOnClickListener(this);
         tv_title = findViewById(R.id.tv_title);
         tv_title.setVisibility(View.GONE);
 
@@ -57,9 +65,20 @@ public class HostProfileActivity extends AppCompatActivity implements View.OnCli
                 selectedProgramButton();
                 showProgramFragment();
                 break;
+            case R.id.back_img:
+                onBackPressed();
+                break;
+            case R.id.menu_img:
+                checkDrawerOpen();
+                break;
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        /*super.onBackPressed();*/
+        finish();
+    }
 
     public void selectedRegularButton(){
       //  regular_btn.setTextColor(Color.parseColor("#fafafa"));

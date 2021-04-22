@@ -60,8 +60,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     <string name="activity_name_activity_name_activity_name">Activity Name Activity Name Activity \n Name</string>
     <string name="discount">Discount  <font color='#ff8400'>  (Promocode: ABCVXK123)</font></string>
     <string name="wallet_txn_id_123454876465">Wallet Txn ID: <font color='#7f838c'>123454876465</font></string>
-<string name="are_you_sure_to_want_to_cancel"> Are you sure you want to cancel \n this booking? the amount of 10$ \n  will be credited to your wallet</string>
-
-
+    <string name="are_you_sure_to_want_to_cancel"> Are you sure you want to cancel \n this booking? the amount of 10$ \n  will be credited to your wallet</string>
+    <string name="lorem_ipsum_is_simply_dummy">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the\n industry</string>
+    <string name="re_submit_documents"><u>Re-Submit Documents</u></string>
 
 </resources>

@@ -5,12 +5,15 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Notification;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.hobbido.app.activity.BaseActivity;
 import com.hobbido.app.activity.HomeActivity;
 import com.hobbido.app.adapter.MessageAdapter;
 import com.hobbido.app.adapter.NotificationAdapter;
@@ -18,7 +21,7 @@ import com.hobbido.app.adapter.NotificationAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NotificationActivity extends AppCompatActivity implements View.OnClickListener {
+public class NotificationActivity extends BaseActivity implements View.OnClickListener {
 
     ImageView back_img,menu_img;
     TextView tv_title;
@@ -26,7 +29,11 @@ public class NotificationActivity extends AppCompatActivity implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notification);
+        /*setContentView(R.layout.activity_notification);*/
+
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View contentView = inflater.inflate(R.layout.activity_notification, null, false);
+        drawerLayout.addView(contentView, 0);
 
         initView();
         setOnMessageDataList();
@@ -52,6 +59,7 @@ public class NotificationActivity extends AppCompatActivity implements View.OnCl
         back_img= findViewById(R.id.back_img);
         back_img.setOnClickListener(this);
         menu_img= findViewById(R.id.menu_img);
+        menu_img.setOnClickListener(this);
         tv_title = findViewById(R.id.tv_title);
         tv_title.setText("Notification");
     }
@@ -61,6 +69,9 @@ public class NotificationActivity extends AppCompatActivity implements View.OnCl
         switch(v.getId()){
             case R.id.back_img:
                 dispatchToHomeActivity();
+                break;
+            case R.id.menu_img:
+                checkDrawerOpen();
                 break;
         }
     }

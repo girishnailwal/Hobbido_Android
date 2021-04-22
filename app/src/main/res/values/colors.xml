@@ -26,5 +26,7 @@
     <color name="color_gray_2">#7d8088</color>#d0d7e6
     <color name="Color_app_textview">#444251</color>#444251
     <color name="light_gray">#eff1f3</color>
+    <color name="light_gray_4">#f1f1f1</color>
     <color name="color_gray_3">#a2a9b2</color>
+    <color name="color_chat_bg">#efefef</color>
 </resources>

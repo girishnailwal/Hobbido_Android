@@ -223,12 +223,130 @@
         <View
             android:id="@+id/view31"
             android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
             android:background="@color/ColorLightGray"
             app:layout_constraintEnd_toEndOf="@id/editdateTime1"
             app:layout_constraintStart_toStartOf="@id/editdateTime1"
             app:layout_constraintTop_toBottomOf="@id/editdateTime1"/>
+
+         <TextView
+            android:id="@+id/optionNameBTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="9sp"
+            android:text="Option Name B "
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/deleteimage1View"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view31" />
+
+        <ImageView
+            android:id="@+id/deleteimage1View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/optionNameBTv"
+            app:layout_constraintTop_toTopOf="@id/optionNameBTv"
+            app:srcCompat="@drawable/delete" />
+
+        <TextView
+            android:id="@+id/price1Tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="@string/price"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/optionNameBTv"
+            app:layout_constraintTop_toBottomOf="@id/optionNameBTv" />
+
+        <EditText
+            android:id="@+id/editdate1Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="5th Feb 21, 05:00 PM"
+            android:drawableLeft="@drawable/clock_8"
+            android:drawablePadding="10dp"
+            android:lineSpacingExtra="9sp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:textColor="@color/edit_text_hint_color"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/price1Tv"
+            app:layout_constraintTop_toBottomOf="@id/price1Tv" />
+
+        <TextView
+            android:id="@+id/circle_minus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/option_bottom_sheet_round_bg"
+            android:gravity="center_horizontal"
+            android:text="-"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_value2"
+            app:layout_constraintEnd_toStartOf="@id/tv_value2"
+            app:layout_constraintTop_toTopOf="@id/tv_value2" />
+
+        <TextView
+            android:id="@+id/tv_value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="2dp"
+            android:text="2"
+            android:textColor="@color/text_color"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/circle_plus2"
+            app:layout_constraintEnd_toStartOf="@id/circle_plus2"
+            app:layout_constraintTop_toTopOf="@id/circle_plus2" />
+
+        <TextView
+            android:id="@+id/circle_plus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/option_bottom_sheet_round_bg"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/editdate1Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editdate1Time" />
+
+        <View
+            android:id="@+id/view34"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/ColorLightGray"
+            app:layout_constraintEnd_toEndOf="@id/editdateTime1"
+            app:layout_constraintStart_toStartOf="@id/editdate1Time"
+            app:layout_constraintTop_toBottomOf="@id/editdate1Time"/>
 
         <TextView
             android:id="@+id/activityTotalTv"
@@ -245,7 +363,7 @@
             app:layout_constraintEnd_toStartOf="@+id/rupeesTv"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view31" />
+            app:layout_constraintTop_toBottomOf="@id/view34" />
 
         <TextView
             android:id="@+id/rupeesTv"

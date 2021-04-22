@@ -17,7 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hobbido_and"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.BookingActivity"></activity>
+
+        <!-- <activity android:name=".activity.HostToolsActivity"></activity> -->
+        <activity android:name=".activity.BookingActivity" />
         <activity android:name=".activity.WishListActivity" />
         <activity android:name=".activity.PrivarcyPolicyActivity" />
         <activity android:name=".activity.HostTermsUseActivity" />
@@ -31,9 +33,7 @@
         <activity android:name=".activity.BaseActivity" />
         <activity android:name=".activity.MyCartActivity" />
         <activity android:name=".activity.RiverRaftingActivity" />
-        <activity android:name=".activity.DetailsNewActivity" />
-
-        <!-- <activity android:name=".ScanQrActivity"></activity> -->
+        <activity android:name=".activity.DetailsNewActivity" /> <!-- <activity android:name=".ScanQrActivity"></activity> -->
         <activity android:name=".activity.DetailsActivity" /> <!-- <activity android:name=".CreateNewQueryWithSpinnerActivity"></activity> -->
         <!-- <activity android:name=".UpdateBalanceActivity"></activity> -->
         <!-- <activity android:name=".QuerySubmitActivity"></activity> -->
@@ -53,7 +53,6 @@
         <activity android:name=".DepositActivity" />
         <activity android:name=".activity.CreateNewQueryActivity" />
         <activity android:name=".PaymentMethodActivity" /> <!-- <activity android:name=".Create4Activity"></activity> -->
-        <activity android:name=".AttendanceListActivity" />
         <activity android:name=".SuccessfullActivity" /> <!-- <activity android:name=".AttendanceList2Activity"></activity> -->
         <!-- <activity android:name=".CreateActivity3"></activity> -->
         <!-- <activity android:name=".CongratulationActivity"></activity> -->
@@ -62,8 +61,7 @@
         <!-- <activity android:name=".CreateActivity"></activity> -->
         <!-- <activity android:name=".GeneralActivity"></activity> -->
         <!-- <activity android:name=".HostProfiles2Activity"></activity> -->
-         <activity android:name=".QrCodeActivity"></activity>
-        <!-- <activity android:name=".HostDeleteAccountActivity"></activity> -->
+        <activity android:name=".QrCodeActivity" /> <!-- <activity android:name=".HostDeleteAccountActivity"></activity> -->
         <activity android:name=".HelpCenterActivity" /> <!-- <activity android:name=".activity.PaymentDetailsActivity"></activity> -->
         <activity android:name=".AppSettingActivity" />
         <activity android:name=".NotificationActivity" />
@@ -84,7 +82,8 @@
             android:name=".activity.ChangeLocationActivity"
             android:label="@string/title_activity_change_location" />
         <activity android:name=".activity.MyBookingActivity" />
-        <activity android:name=".activity.AllTransactionActivity" /> <!-- <activity android:name=".activity.NearByActivity"></activity> -->
+        <activity android:name=".activity.AllTransactionActivity" />
+        <activity android:name=".activity.NearByActivity" />
         <activity android:name=".activity.RegularActivity" />
         <activity android:name=".activity.SignupActivity" />
         <activity android:name=".activity.ChangePasswordActivity" />
@@ -99,9 +98,17 @@
         <activity android:name=".activity.CategoryActivity" />
         <activity android:name=".activity.ForgotPasswordActivity" />
         <activity android:name=".activity.ProfileSetUpActivity" />
-        <activity android:name=".activity.HomeActivity" />
         <activity android:name=".activity.LanguageActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activity.HostToolsActivity" />
+        <activity android:name=".adapter.EditHostProfileActivity" />
+        <activity android:name=".AttendanceListActivity" />
+        <activity android:name=".activity.HostProfileSuspendedActivity" />
+        <activity android:name=".activity.ApplicationDetailsRejectedActivity" />
+        <activity android:name=".activity.ApplicationDetailsActivity" />
+        <activity android:name=".activity.NotificationManageActivity" />
+        <activity android:name=".activity.HomeActivity"/>
+        <activity android:name=".ChattingActivity"/>
+                <activity android:name=".SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

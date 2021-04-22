@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/group_37040"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/menuImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/side_bar"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/backImageView"
+        app:layout_constraintTop_toTopOf="@+id/backImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/backImageView"/>
+
+    <ImageView
+        android:id="@+id/sideBarImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/side_bar_img"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/menuImageView"
+        app:layout_constraintTop_toTopOf="@+id/menuImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/menuImageView"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="13sp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="7sp"
+        android:text="Jack Doe"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/sideBarImageView"
+        app:layout_constraintTop_toTopOf="@+id/sideBarImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/sideBarImageView"/>
+
+    <ImageView
+        android:id="@+id/sideBarMenuImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/group_37391"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

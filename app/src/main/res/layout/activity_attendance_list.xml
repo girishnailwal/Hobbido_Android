@@ -45,5 +45,169 @@
         app:layout_constraintTop_toBottomOf="@id/optionTv" />
 
 
+    <EditText
+        android:id="@+id/editdateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="5th Feb 21, 05:00 PM"
+        android:drawableLeft="@drawable/clock_8"
+        android:drawablePadding="10dp"
+        android:lineSpacingExtra="9sp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/dateTv"
+        app:layout_constraintTop_toBottomOf="@id/dateTv" />
+
+    <ImageView
+        android:id="@+id/eye_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:srcCompat="@drawable/icon_awesome_eye"
+        app:layout_constraintBottom_toBottomOf="@id/editdateTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editdateTime" />
+
+    <EditText
+        android:id="@+id/editdateTime1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="5th Feb 21, 05:00 PM"
+        android:drawableLeft="@drawable/clock_8"
+        android:drawablePadding="10dp"
+        android:lineSpacingExtra="9sp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/editdateTime"
+        app:layout_constraintTop_toBottomOf="@id/editdateTime" />
+
+    <ImageView
+        android:id="@+id/eye_img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:srcCompat="@drawable/icon_awesome_eye"
+        app:layout_constraintBottom_toBottomOf="@id/editdateTime1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editdateTime1" />
+
+    <EditText
+        android:id="@+id/editdateTime2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="5th Feb 21, 05:00 PM"
+        android:drawableLeft="@drawable/clock_8"
+        android:drawablePadding="10dp"
+        android:lineSpacingExtra="9sp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/editdateTime1"
+        app:layout_constraintTop_toBottomOf="@id/editdateTime1" />
+
+    <ImageView
+        android:id="@+id/eye_img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:srcCompat="@drawable/icon_awesome_eye"
+        app:layout_constraintBottom_toBottomOf="@id/editdateTime2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editdateTime2" />
+
+    <TextView
+        android:id="@+id/date1Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Date: 15.02.2021"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/editdateTime2"
+        app:layout_constraintTop_toBottomOf="@id/editdateTime2" />
+
+    <EditText
+        android:id="@+id/editdateTime3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="5th Feb 21, 05:00 PM"
+        android:drawableLeft="@drawable/clock_8"
+        android:drawablePadding="10dp"
+        android:lineSpacingExtra="9sp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/date1Tv"
+        app:layout_constraintTop_toBottomOf="@id/date1Tv" />
+
+    <ImageView
+        android:id="@+id/eye_img3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:srcCompat="@drawable/icon_awesome_eye"
+        app:layout_constraintBottom_toBottomOf="@id/editdateTime3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editdateTime3" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/ColorLightBlack"
+        android:lineSpacingExtra="9sp"
+        android:text="Option B"
+        android:background="@color/light_gray"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:drawableEnd="@drawable/icon_feather_chevron_down1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editdateTime3"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

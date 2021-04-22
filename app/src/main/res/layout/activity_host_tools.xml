@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HostToolsActivity">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/createActivityImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/scanQrImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1"
+        app:srcCompat="@drawable/group_37495" />
+
+    <ImageView
+        android:id="@+id/scanQrImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/createActivityImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/createActivityImage"
+        app:layout_constraintTop_toTopOf="@+id/createActivityImage"
+        app:srcCompat="@drawable/group_37496" />
+
+    <TextView
+        android:id="@+id/updateDocumentTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableEnd="@drawable/icon_feather_chevron_down"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:text="Update Documents"
+        android:textColor="@color/Color_app_textview"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/createActivityImage"
+        app:layout_constraintTop_toBottomOf="@id/scanQrImageView" />
+
+    <TextView
+        android:id="@+id/payoutMethodTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableEnd="@drawable/icon_feather_chevron_down"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:text="Payout Method"
+        android:textColor="@color/Color_app_textview"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/updateDocumentTv"
+        app:layout_constraintStart_toStartOf="@+id/updateDocumentTv"
+        app:layout_constraintTop_toBottomOf="@id/updateDocumentTv" />
+
+    <TextView
+        android:id="@+id/manageListingTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableEnd="@drawable/icon_feather_chevron_down"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:text="Manage Listings"
+        android:textColor="@color/Color_app_textview"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/payoutMethodTv"
+        app:layout_constraintStart_toStartOf="@+id/payoutMethodTv"
+        app:layout_constraintTop_toBottomOf="@id/payoutMethodTv" />
+
+    <TextView
+        android:id="@+id/myEarningTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:text="My Earnings"
+        android:textColor="@color/Color_app_textview"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:drawableEnd="@drawable/icon_feather_chevron_down"
+        app:layout_constraintEnd_toEndOf="@+id/manageListingTv"
+        app:layout_constraintStart_toStartOf="@+id/manageListingTv"
+        app:layout_constraintTop_toBottomOf="@id/manageListingTv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

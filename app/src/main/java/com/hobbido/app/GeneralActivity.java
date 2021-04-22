@@ -3,6 +3,7 @@ package com.hobbido.app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,7 +13,7 @@ import com.hobbido.app.adapter.CustomExpandableGeneralListAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GeneralActivity extends AppCompatActivity {
+public class GeneralActivity extends AppCompatActivity implements View.OnClickListener {
     ImageView back_img,menu_img;
     TextView tv_title;
     ExpandableListView expandableListView;
@@ -30,6 +31,15 @@ public class GeneralActivity extends AppCompatActivity {
             selectedchildPosition = index;
             return false;
         });
+    }
+
+    private void toolbarSetUp() {
+        back_img= findViewById(R.id.back_img);
+        back_img.setOnClickListener(this);
+        menu_img= findViewById(R.id.menu_img);
+        menu_img.setOnClickListener(this);
+        tv_title = findViewById(R.id.tv_title);
+        tv_title.setText("General");
     }
     private void initView() {
         expandableListView = findViewById(R.id.expandableListView);
@@ -51,10 +61,9 @@ public class GeneralActivity extends AppCompatActivity {
             }
         });
     }
-    private void toolbarSetUp() {
-        back_img= findViewById(R.id.back_img);
-        menu_img= findViewById(R.id.menu_img);
-        tv_title = findViewById(R.id.tv_title);
-        tv_title.setText("General");
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

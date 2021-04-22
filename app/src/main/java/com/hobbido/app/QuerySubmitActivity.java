@@ -12,7 +12,6 @@ public class QuerySubmitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_query_submit);
-
         closeButton = findViewById(R.id.closeButton);
     }
 }
