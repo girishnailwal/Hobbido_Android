@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WalletActivity">
+
+    <ImageView
+        android:id="@+id/cover_img"
+        android:layout_width="0dp"
+        android:layout_height="255dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rounded_bottom_corner_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_fourth"
+        app:layout_constraintEnd_toEndOf="@+id/cover_img"
+        app:layout_constraintStart_toStartOf="@+id/cover_img"
+        app:layout_constraintTop_toTopOf="@+id/cover_img" />
+
+    <TextView
+        android:id="@+id/availableBalanceTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="8sp"
+        android:text="Available Balance"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1" />
+
+    <TextView
+        android:id="@+id/reupeesTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="16sp"
+        android:text="$400.00"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@id/availableBalanceTv"
+        app:layout_constraintStart_toStartOf="@id/availableBalanceTv"
+        app:layout_constraintTop_toBottomOf="@id/availableBalanceTv" />
+
+    <TextView
+        android:id="@+id/depositTv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_rounded_bg_with_thirteen"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:text="Deposit"
+        android:textColor="@color/ColorOrange"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@id/reupeesTv"
+        app:layout_constraintStart_toStartOf="@id/reupeesTv"
+        app:layout_constraintTop_toBottomOf="@id/reupeesTv" />
+
+    <TextView
+        android:id="@+id/recentTransactionsTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lineSpacingExtra="8sp"
+        android:text="Recent Transactions"
+        android:textColor="@color/ColorLightBlack"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/filterImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cover_img" />
+
+    <ImageView
+        android:id="@+id/filterImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cover_img"
+        app:layout_constraintTop_toTopOf="@id/recentTransactionsTv"
+        app:srcCompat="@drawable/equalizer_2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/allTransactionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recentTransactionsTv"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/allTransactionButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_rounded_bg"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="All Transactions"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,9 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.hobbido.app.R;
+import com.hobbido.app.activity.WaitingBookingActivity;
+import com.hobbido.app.fragment.WaitingListFragment;
 
 import java.util.List;
 
@@ -16,9 +19,11 @@ public class MyBookingAdapter extends RecyclerView.Adapter<MyBookingAdapter.MyVi
 
     Context context;
     List<String> dayList;
-    public MyBookingAdapter(Context context, List<String> list) {
+    Fragment fragment;
+    public MyBookingAdapter(Context context, List<String> list,Fragment fragment) {
         this.context = context;
         this.dayList = list;
+        this.fragment = fragment;
     }
 
     @NonNull
@@ -31,7 +36,9 @@ public class MyBookingAdapter extends RecyclerView.Adapter<MyBookingAdapter.MyVi
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+      holder.itemView.setOnClickListener(v -> {
+          ((WaitingListFragment)fragment).dispatchToWaitingBookingActivity();
+      });
     }
 
     @Override

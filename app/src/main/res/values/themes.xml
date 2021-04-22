@@ -67,4 +67,24 @@
         <item name="android:button">@drawable/radio_button_selector</item>
     </style>
 
+
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_day_bg</item>
+        <item name="android:textColor">@color/text_color_chip_state_list</item>
+        <item name="android:textAppearance">@style/ChipTextStyleAppearance</item>
+        <item name="android:checkable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="chipStartPadding">10dp</item>
+        <item name="chipEndPadding">10dp</item>
+        <item name="chipStrokeColor">#ced5db</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">2dp</item>
+    </style>
+
+    <style name="ChipTextStyleAppearance">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
 </resources>

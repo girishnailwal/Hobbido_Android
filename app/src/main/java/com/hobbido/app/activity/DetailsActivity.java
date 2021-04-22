@@ -7,10 +7,12 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.hobbido.app.R;
 import com.hobbido.app.adapter.DetailScreenImagesAdapter;
@@ -27,6 +29,7 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
 
     Button details_btn, options_btn,package_btn;
     RecyclerView recyclerView;
+    ImageView back_img,menu_img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,13 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         initView();
         showDetailsFragment();
         setRecipesImagesList();
+        toolbar();
+    }
+
+    private void toolbar() {
+        back_img = findViewById(R.id.back_img);
+        back_img.setOnClickListener(this);
+        menu_img= findViewById(R.id.menu_img);
     }
 
     public void initView(){
@@ -64,10 +74,16 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
                 showPackageFragment();
                 selectedPackageButton();
                 break;
+            case R.id.back_img:
+                dispatchToRegularActivity();
+                break;
         }
     }
 
-
+    private void dispatchToRegularActivity() {
+        Intent intent = new Intent(DetailsActivity.this, RegularActivity.class);
+        startActivity(intent);
+    }
     public void showDetailsFragment() {
         DetailsFragment fragment = new DetailsFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -159,4 +175,6 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         recyclerView.setLayoutManager(llm);
         recyclerView.setAdapter(detailScreenImagesAdapter);
     }
+
+
 }

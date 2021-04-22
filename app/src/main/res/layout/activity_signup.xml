@@ -13,7 +13,7 @@
         tools:context=".activity.SignupActivity">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/backImageViews"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -36,12 +36,12 @@
             android:textColor="#26374b"
             android:textSize="22sp"
             android:textStyle="normal"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintEnd_toStartOf="@+id/langImageView"
+            app:layout_constraintStart_toEndOf="@+id/backImageViews"
+            app:layout_constraintTop_toTopOf="@+id/backImageViews" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/langImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -54,8 +54,10 @@
 
         <View
             android:id="@+id/view3"
-            android:layout_width="128dp"
-            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle_with_camera"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -171,7 +173,8 @@
                     app:ccp_textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
 
 
                 <View
@@ -380,7 +383,7 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button"
+            android:id="@+id/registerButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -393,7 +396,7 @@
             android:lineSpacingExtra="9sp"
             android:text="Continue"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="normal"
             app:layout_constraintBottom_toTopOf="@+id/view"
@@ -410,8 +413,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/bottom_line_bg"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/button"
-            app:layout_constraintStart_toStartOf="@+id/button" />
+            app:layout_constraintEnd_toEndOf="@+id/registerButton"
+            app:layout_constraintStart_toStartOf="@+id/registerButton" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -91,7 +91,7 @@
             android:background="@drawable/btn_rounded_bg"
             android:fontFamily="@font/poppins_regular"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="10dp"
+            android:paddingVertical="5dp"
             android:text="Add To Cart"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -135,8 +135,8 @@
             android:background="@drawable/rounded_top_right_bottom_left_orange_bg"
             android:fontFamily="@font/poppins_regular"
             android:lineSpacingExtra="5.5sp"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="3dp"
             android:text="Save 5$"
             android:textColor="#fafafa"
             android:textSize="12.5sp"

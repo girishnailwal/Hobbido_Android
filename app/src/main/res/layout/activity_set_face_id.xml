@@ -37,7 +37,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/enableButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -50,7 +50,7 @@
         android:lineSpacingExtra="9sp"
         android:text="Enable"
         android:textAllCaps="false"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/tv_skip_for_now"
@@ -84,8 +84,8 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/bottom_line_bg"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/enableButton"
+        app:layout_constraintStart_toStartOf="@+id/enableButton" />
 
 
 

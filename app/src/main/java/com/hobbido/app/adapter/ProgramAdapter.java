@@ -25,7 +25,7 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.program_single_row, parent, false);
+        View view = inflater.inflate(R.layout.program_single_row_layout, parent, false);
         return new MyViewHolder(view);
     }
 

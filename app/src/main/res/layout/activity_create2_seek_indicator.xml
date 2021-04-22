@@ -49,8 +49,8 @@
             app:layout_constraintStart_toStartOf="@id/steps"
             app:layout_constraintTop_toBottomOf="@id/steps" />
 
-        <TextView
-            android:id="@+id/descriptionTv"
+        <EditText
+            android:id="@+id/editDescription"
             android:layout_width="0dp"
             android:layout_height="120dp"
             android:layout_marginTop="8dp"
@@ -59,9 +59,14 @@
             android:fontFamily="@font/poppins_regular"
             android:lineSpacingExtra="7sp"
             android:padding="10dp"
-            android:text="Description"
+            android:hint="Description"
+            android:gravity="start"
+            android:cursorVisible="true"
+            android:elevation="2dp"
+            android:inputType="textCapSentences|textMultiLine"
             android:textColor="@color/color_gray_3"
             android:textSize="14sp"
+            android:backgroundTint="@null"
             android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tittleTv"
@@ -78,8 +83,8 @@
             android:textColor="@color/text_color"
             android:textSize="16sp"
             android:textStyle="normal"
-            app:layout_constraintStart_toStartOf="@+id/descriptionTv"
-            app:layout_constraintTop_toBottomOf="@+id/descriptionTv" />
+            app:layout_constraintStart_toStartOf="@+id/editDescription"
+            app:layout_constraintTop_toBottomOf="@+id/editDescription" />
 
         <CheckBox
             android:id="@+id/male_chkb"

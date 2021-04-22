@@ -14,7 +14,7 @@ import com.hobbido.app.R;
 
 public class OptionABottomSheet extends BottomSheetDialogFragment implements View.OnClickListener {
 
-    private static final String TAG = "ActionBottomDialog";
+    public static final String TAG = "ActionBottomDialog";
     private ItemClickListener mListener;
 
     public static OptionABottomSheet newInstance(){

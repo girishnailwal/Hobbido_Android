@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hobbido.app.R;
+import com.hobbido.app.adapter.HistoryAdapter;
 import com.hobbido.app.adapter.MyBookingAdapter;
 
 import java.util.ArrayList;
@@ -57,7 +58,7 @@ public class HistoryFragment extends Fragment {
             arrayList.add("sannju");
         }
 
-        MyBookingAdapter adapter = new MyBookingAdapter(activity, arrayList);
+        HistoryAdapter adapter = new HistoryAdapter(activity, arrayList);
         LinearLayoutManager layoutManager = new LinearLayoutManager(activity);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);

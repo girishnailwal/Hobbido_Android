@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WaitingBookingActivity">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/waitingTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Waiting: 9"
+        android:textColor="@color/ColorOrange"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1" />
+
+    <View
+        android:id="@+id/view29"
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/ColorOrange"
+        app:layout_constraintEnd_toStartOf="@+id/activityDetailsTv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/waitingTv" />
+
+    <TextView
+        android:id="@+id/activityDetailsTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="9sp"
+        android:text="Activity Details"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/view29"
+        app:layout_constraintTop_toTopOf="@id/view29" />
+
+    <TextView
+        android:id="@+id/activityNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="9sp"
+        android:text="Activity Name Activity Name Activity Name "
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/activityDetailsTv"
+        app:layout_constraintTop_toBottomOf="@id/activityDetailsTv" />
+
+    <TextView
+        android:id="@+id/optionNameATv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lineSpacingExtra="9sp"
+        android:text="Option Name A"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/activityNameTv"
+        app:layout_constraintTop_toBottomOf="@id/activityNameTv" />
+
+    <TextView
+        android:id="@+id/numberSlotsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/numberslots"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/optionNameATv"
+        app:layout_constraintTop_toBottomOf="@id/optionNameATv" />
+
+    <TextView
+        android:id="@+id/dateFridayTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/date_friday"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/numberSlotsTv"
+        app:layout_constraintTop_toBottomOf="@id/numberSlotsTv" />
+
+    <TextView
+        android:id="@+id/loactionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/location"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/dateFridayTv"
+        app:layout_constraintTop_toBottomOf="@id/dateFridayTv" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mapConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loactionTv">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:context=".MapsActivity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view30"
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/ColorOrange"
+        app:layout_constraintEnd_toStartOf="@+id/hostDetailsTv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mapConstraint" />
+    <TextView
+        android:id="@+id/hostDetailsTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lineSpacingExtra="6sp"
+        android:text="Host Details"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/view30"
+        app:layout_constraintTop_toTopOf="@id/view30" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hostDetailsTv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/RemoveListButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_rounded_bg"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Remove from Waiting List"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

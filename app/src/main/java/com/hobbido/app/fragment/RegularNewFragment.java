@@ -6,32 +6,30 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.hobbido.app.R;
-import com.hobbido.app.adapter.MessageAdapter;
-import com.hobbido.app.adapter.RiverRaftingAdapter;
+import com.hobbido.app.adapter.RegularNewAdapter;
+import com.hobbido.app.bottomSheet.OptionABottomSheet;
+import com.hobbido.app.bottomSheet.SortBottomSheet;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RiverRaftingFragment extends Fragment {
 
-    ImageView back_img,menu_img;
-    TextView tv_title;
-    RecyclerView recycleview;
+public class RegularNewFragment extends Fragment implements OptionABottomSheet.ItemClickListener {
+
+
+    RecyclerView recyclerView;
     Activity activity;
 
-   public RiverRaftingFragment(){
-
+    public RegularNewFragment() {
+        // Required empty public constructor
     }
 
     @Override
@@ -44,41 +42,42 @@ public class RiverRaftingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_river_rafting, container, false);
+        return inflater.inflate(R.layout.fragment_regular_new, container, false);
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initView(view);
-        setOnMessageDataList();
-        customtool_baar();
+        setDataOnCategoryList();
+    }
+
+    public void initView(View view){
+        recyclerView = view.findViewById(R.id.recyclerView);
     }
 
 
+    public void setDataOnCategoryList() {
 
-    public void initView(View view) {
-        recycleview = view.findViewById(R.id.recycleview);
-    }
-
-    public void setOnMessageDataList() {
         List<String> arrayList = new ArrayList<>();
         for (int i = 0; i <6 ; i++) {
             arrayList.add("sannju");
         }
 
-        RiverRaftingAdapter adapter = new RiverRaftingAdapter(activity, arrayList);
+        RegularNewAdapter adapter = new RegularNewAdapter(activity, arrayList,this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(activity);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
-        recycleview.setLayoutManager(layoutManager);
-        recycleview.setAdapter(adapter);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
     }
 
-    public void customtool_baar() {
-        back_img= getView().findViewById(R.id.back_img);
-        menu_img= getView().findViewById(R.id.menu_img);
-        menu_img.setVisibility(View.GONE);
-        tv_title = getView().findViewById(R.id.tv_title);
-        tv_title.setText("River Rafting");
+    public void showOptionBottomSheet() {
+
+
+        /*OptionABottomSheet sortBottomSheet = OptionABottomSheet.newInstance();
+        sortBottomSheet.show(getActivity().getSupportFragmentManager(), OptionABottomSheet.TAG);*/
+    }
+    @Override
+    public void onItemClick(String item) {
+
     }
 }

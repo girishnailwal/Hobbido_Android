@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PrepaidSessionActivity">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/program_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#7d8088"
+        android:lineSpacingExtra="4sp"
+        android:background="@drawable/unselected_gray_btn_bg"
+        android:textAllCaps="false"
+        android:text="Program"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/regular_btn"
+        app:layout_constraintTop_toTopOf="@+id/regular_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regular_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/rounded_purpale_bg"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textColor="#fafafa"
+        android:lineSpacingExtra="4sp"
+        android:text="Regular"
+        app:layout_constraintEnd_toStartOf="@+id/program_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include1" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regular_btn">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

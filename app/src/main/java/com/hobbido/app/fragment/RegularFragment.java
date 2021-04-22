@@ -1,12 +1,12 @@
 package com.hobbido.app.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,7 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hobbido.app.R;
-import com.hobbido.app.adapter.CategoryAdapter;
+import com.hobbido.app.activity.DetailsActivity;
+import com.hobbido.app.activity.DetailsNewActivity;
 import com.hobbido.app.adapter.RegularAdapter;
 
 import java.util.ArrayList;
@@ -61,10 +62,15 @@ public class RegularFragment extends Fragment {
             arrayList.add("sannju");
         }
 
-        RegularAdapter adapter = new RegularAdapter(activity, arrayList);
+        RegularAdapter adapter = new RegularAdapter(activity, arrayList,this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(activity);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+    }
+
+    public void dispatchToDetailsActivity(){
+        Intent intent = new Intent(activity, DetailsActivity.class);
+        startActivity(intent);
     }
 }

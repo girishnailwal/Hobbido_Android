@@ -43,7 +43,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView32"
+            android:id="@+id/calenderImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -57,9 +57,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView32"
-            app:layout_constraintEnd_toStartOf="@+id/imageView32"
-            app:layout_constraintTop_toTopOf="@+id/imageView32"
+            app:layout_constraintBottom_toBottomOf="@+id/calenderImageView"
+            app:layout_constraintEnd_toStartOf="@+id/calenderImageView"
+            app:layout_constraintTop_toTopOf="@+id/calenderImageView"
             app:srcCompat="@drawable/ellipse_61" />
 
         <TextView
@@ -184,7 +184,7 @@
         android:layout_marginEnd="16dp"
         android:isIndicator="true"
         android:numStars="5"
-        android:progressTint="#FFCC01"
+        android:progressTint="@color/ColorOrange"
         android:rating="4"
         android:stepSize="1"
         app:layout_constraintBottom_toBottomOf="@+id/textView31"

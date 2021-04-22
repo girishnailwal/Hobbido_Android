@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Hobbido_and</string>
-    <string name="terms_and_policy">By clicking on "Register" you agree to our \n <font color='#0042B9'>terms of use</font>  &amp; <font color='#0042B9'>privacy policy</font></string>
+    <string name="terms_and_policy">By clicking on "Register" you agree to our \n <font color='#ff8400'>terms of use</font>  &amp; <font color='#0042B9'>privacy policy</font></string>
     <string name="email">Email</string>
     <string name="name">Name</string>
     <string name="next">Next</string>
@@ -45,6 +45,23 @@
     <string name="available_slot"><font color='#26374b'>Available Slots: </font>18</string>
     <string name="username"><font color='#26374b'>User Name:  </font>sharadgarg21</string>
     <string name="numberslots"><font color='#26374b'>Number of Slots:   </font>2</string>
+    <string name="location"><font color='#26374b'>Loaction:   </font>Noida 63, India</string>
 
     <string name="username_scanbarcode"><font color='#26374b'>Username: </font>sharadgarg21</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_integer_venenatis_orci_massa_duis_pulvinar_ante_quis_mi_volutpat_non_con_val_lis_turpis_semper_more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis orci massa. Du is pulvinar ante quis mi volutpat, non con val lis turpis semper more...</string>
+    <string name="redeem"><u>Redeem</u></string>
+    <string name="price"><b>Price : </b>$20.00 per slot</string>
+    <string name="reminder_session">Reminder Session :<font color='#959ba4'>30</font></string>
+    <string name="lorem_ipsum_dolor_sit_amet">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</string>
+    <string name="are_you_sure_you_want_to_leave_the_waiting_list">Are you sure you want to leave \n the waiting list?</string>
+    <string name="activity_name_activity_name_activity_name">Activity Name Activity Name Activity \n Name</string>
+    <string name="discount">Discount  <font color='#ff8400'>  (Promocode: ABCVXK123)</font></string>
+    <string name="wallet_txn_id_123454876465">Wallet Txn ID: <font color='#7f838c'>123454876465</font></string>
+<string name="are_you_sure_to_want_to_cancel"> Are you sure you want to cancel \n this booking? the amount of 10$ \n  will be credited to your wallet</string>
+
+
+
 </resources>

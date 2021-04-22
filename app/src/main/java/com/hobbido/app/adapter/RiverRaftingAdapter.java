@@ -39,7 +39,7 @@ public class RiverRaftingAdapter extends RecyclerView.Adapter<RiverRaftingAdapte
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 5;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

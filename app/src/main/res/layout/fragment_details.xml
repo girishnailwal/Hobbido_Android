@@ -194,13 +194,13 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/poppins_regular"
         android:lineSpacingExtra="7sp"
-        android:textColor="#26374b"
+        android:textColor="@color/text_color"
         android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView54"
         app:layout_constraintTop_toBottomOf="@+id/textView54"
-        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis orci massa. Duis pulvinar ante quis mi volutpat, non con val lis turpis semper." />
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis orci massa. Duis pulvinar ante quis mi volutpat, non con val lis turpis semper." />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

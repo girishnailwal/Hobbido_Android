@@ -6,9 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.internal.$Gson$Preconditions;
 import com.hobbido.app.R;
+import com.hobbido.app.fragment.HomeFragment;
 
 import java.util.List;
 
@@ -16,9 +19,13 @@ public class FeaturedListingAdapter extends RecyclerView.Adapter<FeaturedListing
 
     Context context;
     List<String> dayList;
-    public FeaturedListingAdapter(Context context, List<String> list) {
+    Fragment fragment;
+
+
+    public FeaturedListingAdapter(Context context, List<String> list, Fragment fragment) {
         this.context = context;
         this.dayList = list;
+        this.fragment = fragment;
     }
 
     @NonNull
@@ -32,6 +39,10 @@ public class FeaturedListingAdapter extends RecyclerView.Adapter<FeaturedListing
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
        // String name = dayList.get(position);
+
+        holder.itemView.setOnClickListener(v -> {
+            ((HomeFragment)fragment).dispatchToDetailsActivity();
+        });
 
     }
 

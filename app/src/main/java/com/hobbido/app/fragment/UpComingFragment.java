@@ -1,6 +1,7 @@
 package com.hobbido.app.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,7 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hobbido.app.R;
+import com.hobbido.app.activity.BaseActivity;
+import com.hobbido.app.activity.BookingActivity;
+import com.hobbido.app.activity.WishListActivity;
 import com.hobbido.app.adapter.MyBookingAdapter;
+import com.hobbido.app.adapter.UpComingAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,10 +66,14 @@ public class UpComingFragment extends Fragment {
             arrayList.add("sannju");
         }
 
-        MyBookingAdapter adapter = new MyBookingAdapter(activity, arrayList);
+        UpComingAdapter adapter = new UpComingAdapter(activity, arrayList,this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(activity);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+    }
+    public void dispatchToBookingActivity(){
+        Intent intent = new Intent(activity, BookingActivity.class);
+        startActivity(intent);
     }
 }

@@ -12,24 +12,49 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Hobbido_and">
-<!--        <activity android:name=".SearchActivity"></activity>-->
-        <!-- <activity android:name=".BankDetails1Activity"></activity> -->
+        android:theme="@style/Theme.Hobbido_and"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.BookingActivity"></activity>
+        <activity android:name=".activity.WishListActivity" />
+        <activity android:name=".activity.PrivarcyPolicyActivity" />
+        <activity android:name=".activity.HostTermsUseActivity" />
+        <activity android:name=".activity.LanguageNewActivity" />
+        <activity android:name=".activity.SuccessfullyQueryRecieveActivity" />
+        <activity android:name=".activity.WalletActivity" />
+        <activity android:name=".activity.PaymentMethodNewActivity" />
+        <activity android:name=".activity.BookingWaitingListNewActivity" />
+        <activity android:name=".activity.WaitingBookingActivity" />
+        <activity android:name=".activity.PrepaidSessionActivity" />
+        <activity android:name=".activity.BaseActivity" />
+        <activity android:name=".activity.MyCartActivity" />
+        <activity android:name=".activity.RiverRaftingActivity" />
+        <activity android:name=".activity.DetailsNewActivity" />
+
+        <!-- <activity android:name=".ScanQrActivity"></activity> -->
+        <activity android:name=".activity.DetailsActivity" /> <!-- <activity android:name=".CreateNewQueryWithSpinnerActivity"></activity> -->
+        <!-- <activity android:name=".UpdateBalanceActivity"></activity> -->
+        <!-- <activity android:name=".QuerySubmitActivity"></activity> -->
+        <activity android:name=".GeneralTermsUseActivity" />
+        <activity android:name=".LegalInfoActivity" /> <!-- <activity android:name=".UpdateDocumentsActivity"></activity> -->
+        <activity android:name=".SearchActivity" /> <!-- <activity android:name=".BankDetails1Activity"></activity> -->
         <!-- <activity android:name=".Create2SeekIndicatorActivity"></activity> -->
         <!-- <activity android:name=".Create6ChooseOptionActivity"></activity> -->
         <!-- <activity android:name=".Create4OptionNameActivity"></activity> -->
         <!-- <activity android:name=".Create3SearchLocationActivity"></activity> -->
         <!-- <activity android:name=".Create1Activity"></activity> -->
-        <activity android:name=".ScanBarcodeActivity" /> <!-- <activity android:name=".CurrencyActivity"></activity> -->
-        <!-- <activity android:name=".DistanceActivity"></activity> -->
-        <!-- <activity android:name=".Deposit3Activity"></activity> -->
-        <!-- <activity android:name=".Deposit2Activity"></activity> -->
-        <!-- <activity android:name=".DepositActivity"></activity> -->
-        <!-- <activity android:name=".PaymentMethodActivity"></activity> -->
-        <!-- <activity android:name=".Create4Activity"></activity> -->
-        <activity android:name=".AttendanceListActivity" /> <!-- <activity android:name=".AttendanceList2Activity"></activity> -->
+        <activity android:name=".ScanBarcodeActivity" />
+        <activity android:name=".CurrencyActivity" />
+        <activity android:name=".DistanceActivity" />
+        <activity android:name=".Deposit3Activity" />
+        <activity android:name=".Deposit2Activity" />
+        <activity android:name=".DepositActivity" />
+        <activity android:name=".activity.CreateNewQueryActivity" />
+        <activity android:name=".PaymentMethodActivity" /> <!-- <activity android:name=".Create4Activity"></activity> -->
+        <activity android:name=".AttendanceListActivity" />
+        <activity android:name=".SuccessfullActivity" /> <!-- <activity android:name=".AttendanceList2Activity"></activity> -->
         <!-- <activity android:name=".CreateActivity3"></activity> -->
         <!-- <activity android:name=".CongratulationActivity"></activity> -->
         <!-- <activity android:name=".SetUpCalenderActivity"></activity> -->
@@ -37,13 +62,12 @@
         <!-- <activity android:name=".CreateActivity"></activity> -->
         <!-- <activity android:name=".GeneralActivity"></activity> -->
         <!-- <activity android:name=".HostProfiles2Activity"></activity> -->
-        <!-- <activity android:name=".QrCodeActivity"></activity> -->
+         <activity android:name=".QrCodeActivity"></activity>
         <!-- <activity android:name=".HostDeleteAccountActivity"></activity> -->
-        <!-- <activity android:name=".HelpCenterActivity"></activity> -->
-        <!-- <activity android:name=".activity.PaymentDetailsActivity"></activity> -->
-        <!-- <activity android:name=".AppSetting"></activity> -->
-        <!-- <activity android:name=".NotificationActivity"></activity> -->
-        <!-- <activity android:name=".MessageActivity"></activity> -->
+        <activity android:name=".HelpCenterActivity" /> <!-- <activity android:name=".activity.PaymentDetailsActivity"></activity> -->
+        <activity android:name=".AppSettingActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".MessageActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -58,25 +82,26 @@
 
         <activity
             android:name=".activity.ChangeLocationActivity"
-            android:label="@string/title_activity_change_location" /> <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
-        <!-- <activity android:name=".activity.NearByActivity"></activity> -->
-        <!-- <activity android:name=".activity.RegularActivity"></activity> -->
-        <!-- <activity android:name=".activity.HomeActivity"></activity> -->
-        <!-- <activity android:name=".activity.ChangePasswordActivity"></activity> -->
-        <!-- <activity android:name=".activity.ForgotPasswordActivity"></activity> -->
-        <!-- <activity android:name=".activity.SetFaceIdActivity"></activity> -->
-        <!-- <activity android:name=".activity.BecomeHostActivity"></activity> -->
-        <!-- <activity android:name=".activity.HostAggrementActivity"></activity> -->
-        <!-- <activity android:name=".activity.BankDetialsActivity"></activity> -->
-        <!-- <activity android:name=".activity.SucessUpdateActivity"></activity> -->
-        <!-- <activity android:name=".activity.LoginActivity"></activity> -->
-        <!-- <activity android:name=".activity.VerificationActivity"></activity> -->
-        <!-- <activity android:name=".activity.CategoryActivity"></activity> -->
-        <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
+            android:label="@string/title_activity_change_location" />
+        <activity android:name=".activity.MyBookingActivity" />
+        <activity android:name=".activity.AllTransactionActivity" /> <!-- <activity android:name=".activity.NearByActivity"></activity> -->
+        <activity android:name=".activity.RegularActivity" />
+        <activity android:name=".activity.SignupActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity android:name=".activity.SetFaceIdActivity" />
+        <activity android:name=".activity.BecomeHostActivity" />
+        <activity android:name=".activity.HostAggrementActivity" /> <!-- <activity android:name=".activity.BankDetialsActivity"></activity> -->
+        <activity android:name=".activity.SucessUpdateActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.VerificationActivity" /> <!-- <activity android:name=".activity.MyBookingActivity"></activity> -->
         <!--  -->
-        <activity android:name=".activity.ProfileSetUpActivity" /> <!-- <activity android:name=".activity.SignupActivity"></activity> -->
-        <!-- <activity android:name=".activity.LanguageActivity"></activity> -->
-        <activity android:name=".activity.UpdateGender">
+        <activity android:name=".activity.BankDetailsActivity" />
+        <activity android:name=".activity.CategoryActivity" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.ProfileSetUpActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.LanguageActivity" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

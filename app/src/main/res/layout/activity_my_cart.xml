@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MyCartActivity">
+
+        <include
+            android:id="@+id/include1"
+            layout="@layout/custom_tool_bar_second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activityNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/activity_name_activity_name_activity_name"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/hurtImageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include1" />
+
+        <ImageView
+            android:id="@+id/hurtImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/activityNameTv"
+            app:layout_constraintTop_toTopOf="@id/activityNameTv"
+            app:srcCompat="@drawable/path_2270" />
+
+        <TextView
+            android:id="@+id/optionNameATv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="9sp"
+            android:text="Option Name A "
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/deleteimageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activityNameTv" />
+
+        <ImageView
+            android:id="@+id/deleteimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/optionNameATv"
+            app:layout_constraintTop_toTopOf="@id/optionNameATv"
+            app:srcCompat="@drawable/delete" />
+
+        <TextView
+            android:id="@+id/priceTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="9sp"
+            android:text="@string/price"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/optionNameATv"
+            app:layout_constraintTop_toBottomOf="@id/optionNameATv" />
+
+        <EditText
+            android:id="@+id/editdateTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="5th Feb 21, 05:00 PM"
+            android:drawableLeft="@drawable/clock_8"
+            android:drawablePadding="10dp"
+            android:lineSpacingExtra="9sp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:textColor="@color/edit_text_hint_color"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/priceTv"
+            app:layout_constraintTop_toBottomOf="@id/priceTv" />
+
+        <TextView
+            android:id="@+id/circle_minus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/option_bottom_sheet_round_bg"
+            android:gravity="center_horizontal"
+            android:text="-"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_value1"
+            app:layout_constraintEnd_toStartOf="@id/tv_value1"
+            app:layout_constraintTop_toTopOf="@id/tv_value1" />
+
+        <TextView
+            android:id="@+id/tv_value1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="2dp"
+            android:text="2"
+            android:textColor="@color/text_color"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/circle_plus1"
+            app:layout_constraintEnd_toStartOf="@id/circle_plus1"
+            app:layout_constraintTop_toTopOf="@id/circle_plus1" />
+
+        <TextView
+            android:id="@+id/circle_plus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/option_bottom_sheet_round_bg"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/editdateTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editdateTime" />
+
+        <EditText
+            android:id="@+id/editdateTime1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="5th Feb 21, 05:00 AM"
+            android:drawableLeft="@drawable/clock_8"
+            android:drawablePadding="10dp"
+            android:lineSpacingExtra="9sp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:textColor="@color/edit_text_hint_color"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/editdateTime"
+            app:layout_constraintTop_toBottomOf="@id/editdateTime" />
+
+        <TextView
+            android:id="@+id/circle_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/circle_light_rounded_bg"
+            android:gravity="center_horizontal"
+            android:text="-"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_value"
+            app:layout_constraintEnd_toStartOf="@id/tv_value"
+            app:layout_constraintTop_toTopOf="@id/tv_value" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="2dp"
+            android:text="2"
+            android:textColor="@color/text_color"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/circle_plus"
+            app:layout_constraintEnd_toStartOf="@id/circle_plus"
+            app:layout_constraintTop_toTopOf="@id/circle_plus" />
+
+        <TextView
+            android:id="@+id/circle_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/option_bottom_sheet_round_bg"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/editdateTime1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editdateTime1" />
+
+        <View
+            android:id="@+id/view31"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/ColorLightGray"
+            app:layout_constraintEnd_toEndOf="@id/editdateTime1"
+            app:layout_constraintStart_toStartOf="@id/editdateTime1"
+            app:layout_constraintTop_toBottomOf="@id/editdateTime1"/>
+
+        <TextView
+            android:id="@+id/activityTotalTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="2sp"
+            android:text="Activity Total"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/rupeesTv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view31" />
+
+        <TextView
+            android:id="@+id/rupeesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/ColorOrange"
+            android:lineSpacingExtra="8sp"
+            android:gravity="end"
+            android:text="$20.00"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/activityTotalTv"
+            app:layout_constraintTop_toTopOf="@id/activityTotalTv" />
+
+        <TextView
+            android:id="@+id/discountTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/text_color"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/discount"
+            app:layout_constraintEnd_toStartOf="@+id/rupees1Tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/activityTotalTv"
+            app:layout_constraintTop_toBottomOf="@id/activityTotalTv" />
+
+        <TextView
+            android:id="@+id/rupees1Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#26374b"
+            android:lineSpacingExtra="6sp"
+            android:gravity="end"
+            android:text="  - $01.00"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/discountTv"
+            app:layout_constraintTop_toTopOf="@id/discountTv" />
+
+
+        <TextView
+            android:id="@+id/removeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textStyle="normal"
+            android:textSize="11sp"
+            android:textColor="@color/ColorLightRed"
+            android:lineSpacingExtra="16sp"
+            android:gravity="end"
+            android:text="Remove"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rupees1Tv" />
+
+
+        <EditText
+            android:id="@+id/editApplyVoucher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@null"
+            android:hint="Apply Voucher"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/discount_3"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/removeTv"
+            app:layout_constraintTop_toBottomOf="@+id/removeTv" />
+
+        <TextView
+            android:id="@+id/applyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Apply Voucher"
+            android:textColor="@color/ColorOrange"
+            app:layout_constraintBottom_toBottomOf="@id/editApplyVoucher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editApplyVoucher" />
+
+
+        <EditText
+            android:id="@+id/editApplyVoucher1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@null"
+            android:hint="Apply Voucher"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/discount_3"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editApplyVoucher"
+            app:layout_constraintTop_toBottomOf="@+id/editApplyVoucher" />
+
+        <TextView
+            android:id="@+id/apply1Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Apply Voucher"
+            android:textColor="@color/ColorOrange"
+            app:layout_constraintBottom_toBottomOf="@id/editApplyVoucher1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editApplyVoucher1" />
+
+
+        <TextView
+            android:id="@+id/subTotalTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="2sp"
+            android:text="Sub Total"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/rupees2Tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editApplyVoucher1" />
+
+        <TextView
+            android:id="@+id/rupees2Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/text_color"
+            android:lineSpacingExtra="8sp"
+            android:gravity="end"
+            android:text="$20.00"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/subTotalTv"
+            app:layout_constraintTop_toTopOf="@id/subTotalTv" />
+
+        <TextView
+            android:id="@+id/bookingFeeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="2sp"
+            android:text="Booking Fee"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/rupees3Tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subTotalTv" />
+
+        <TextView
+            android:id="@+id/rupees3Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/text_color"
+            android:lineSpacingExtra="8sp"
+            android:gravity="end"
+            android:text="$01.00"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bookingFeeTv"
+            app:layout_constraintTop_toTopOf="@id/bookingFeeTv" />
+
+        <TextView
+            android:id="@+id/totalSavingTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="2sp"
+            android:text="Total Saving"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/rupees4Tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bookingFeeTv" />
+
+        <TextView
+            android:id="@+id/rupees4Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/text_color"
+            android:lineSpacingExtra="8sp"
+            android:gravity="end"
+            android:text="$01.00"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/totalSavingTv"
+            app:layout_constraintTop_toTopOf="@id/totalSavingTv" />
+
+        <TextView
+            android:id="@+id/TotalTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="2sp"
+            android:text="Total"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/rupee5Tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totalSavingTv" />
+
+        <TextView
+            android:id="@+id/rupee5Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/ColorOrange"
+            android:lineSpacingExtra="8sp"
+            android:gravity="end"
+            android:text="$20.00"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/TotalTv"
+            app:layout_constraintTop_toTopOf="@id/TotalTv" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_cl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_rounded_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TotalTv">
+
+            <TextView
+                android:id="@+id/amountPaidTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins_regular"
+                android:lineSpacingExtra="6sp"
+                android:text="Amount in wallet"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rupee6Tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:lineSpacingExtra="9sp"
+                android:text="$170.00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/amountPaidTv"
+                app:layout_constraintTop_toBottomOf="@id/amountPaidTv" />
+
+            <TextView
+                android:id="@+id/payTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="9sp"
+                android:text="Pay ($20.00)"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/amountPaidTv" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

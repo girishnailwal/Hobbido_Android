@@ -1,6 +1,7 @@
 package com.hobbido.app.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hobbido.app.R;
+import com.hobbido.app.activity.DetailsActivity;
+import com.hobbido.app.activity.DetailsNewActivity;
 import com.hobbido.app.adapter.DetailScreenImagesAdapter;
 import com.hobbido.app.adapter.FeaturedListingAdapter;
 
@@ -56,7 +59,7 @@ public class HomeFragment extends Fragment {
 
     public void setDataOnList() {
         List<String> stringList = new ArrayList<>();
-        FeaturedListingAdapter  featuredListingAdapter = new FeaturedListingAdapter(activity, stringList);
+        FeaturedListingAdapter  featuredListingAdapter = new FeaturedListingAdapter(activity, stringList,this);
         LinearLayoutManager llm = new LinearLayoutManager(activity);
         llm.setOrientation(LinearLayoutManager.HORIZONTAL);
         featuredListing_recyclerview.setLayoutManager(llm);
@@ -65,7 +68,7 @@ public class HomeFragment extends Fragment {
 
     public void setDataOnNearByList(){
         List<String> stringList = new ArrayList<>();
-        FeaturedListingAdapter  featuredListingAdapter = new FeaturedListingAdapter(activity, stringList);
+        FeaturedListingAdapter  featuredListingAdapter = new FeaturedListingAdapter(activity, stringList,this);
         LinearLayoutManager llm = new LinearLayoutManager(activity);
         llm.setOrientation(LinearLayoutManager.HORIZONTAL);
         near_by_recyclerView.setLayoutManager(llm);
@@ -74,7 +77,7 @@ public class HomeFragment extends Fragment {
 
     public void setDataOnWhatsNewList(){
         List<String> stringList = new ArrayList<>();
-        FeaturedListingAdapter  featuredListingAdapter = new FeaturedListingAdapter(activity, stringList);
+        FeaturedListingAdapter  featuredListingAdapter = new FeaturedListingAdapter(activity, stringList,this);
         LinearLayoutManager llm = new LinearLayoutManager(activity);
         llm.setOrientation(LinearLayoutManager.HORIZONTAL);
         whats_new_recyclerView.setLayoutManager(llm);
@@ -84,10 +87,16 @@ public class HomeFragment extends Fragment {
 
     public void setDataOnRecommendedList(){
         List<String> stringList = new ArrayList<>();
-        FeaturedListingAdapter  featuredListingAdapter = new FeaturedListingAdapter(activity, stringList);
+        FeaturedListingAdapter  featuredListingAdapter = new FeaturedListingAdapter(activity, stringList,this);
         LinearLayoutManager llm = new LinearLayoutManager(activity);
         llm.setOrientation(LinearLayoutManager.HORIZONTAL);
         recommended_recyclerView.setLayoutManager(llm);
         recommended_recyclerView.setAdapter(featuredListingAdapter);
+    }
+
+    public void dispatchToDetailsActivity(){
+        Intent intent = new Intent(activity, DetailsNewActivity.class);
+        startActivity(intent);
+
     }
 }

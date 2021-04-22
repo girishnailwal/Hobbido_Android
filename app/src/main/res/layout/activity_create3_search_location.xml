@@ -81,7 +81,7 @@
         app:layout_constraintStart_toStartOf="@+id/editSearchLocation"
         app:layout_constraintTop_toBottomOf="@+id/editSearchLocation" />
 
-    <TextView
+    <EditText
         android:id="@+id/titleTv"
         android:layout_width="0dp"
         android:layout_height="120dp"
@@ -94,7 +94,11 @@
         android:textColor="@color/color_gray_3"
         android:lineSpacingExtra="7sp"
         android:padding="10dp"
-        android:text="Any special guidelines or instructions for attendees to reach the location"
+        android:gravity="start"
+        android:cursorVisible="true"
+        android:elevation="2dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="Any special guidelines or instructions for attendees to reach the location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/selectMapTv"
         app:layout_constraintTop_toBottomOf="@+id/selectMapTv" />

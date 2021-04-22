@@ -91,7 +91,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView29"
+            android:id="@+id/sortImageView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -115,7 +115,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/filter_img"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView29"
+            app:layout_constraintStart_toEndOf="@+id/sortImageView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView

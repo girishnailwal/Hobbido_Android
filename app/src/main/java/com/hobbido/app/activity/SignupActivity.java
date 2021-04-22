@@ -2,6 +2,7 @@ package com.hobbido.app.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.SpannableString;
@@ -9,26 +10,35 @@ import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hobbido.app.R;
 
-public class SignupActivity extends AppCompatActivity {
+public class SignupActivity extends AppCompatActivity implements View.OnClickListener{
 
     TextView tv_terms;
+    ImageView backImageViews,langImageView;
+    Button registerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-       // setContentView(R.layout.test);
-      //  initView();
-      //  clickablePrivacyPolicy();
+       initiViews();
+        clickablePrivacyPolicy();
     }
 
-    public void initView(){
+    public void initiViews(){
         tv_terms = findViewById(R.id.tv_terms);
+        backImageViews = findViewById(R.id.backImageViews);
+        backImageViews.setOnClickListener(this);
+        registerButton = findViewById(R.id.registerButton);
+        registerButton.setOnClickListener(this);
+        langImageView = findViewById(R.id.langImageView);
+        langImageView.setOnClickListener(this);
     }
 
     public void clickablePrivacyPolicy(){
@@ -71,5 +81,37 @@ public class SignupActivity extends AppCompatActivity {
                 Color.TRANSPARENT); // prevent TextView change background when highlight
         textView.setMovementMethod(LinkMovementMethod.getInstance());
         textView.setText(spannableString, TextView.BufferType.SPANNABLE);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.backImageViews:
+                dispatchToLoginActivity();
+                break;
+            case R.id.registerButton:
+                dispatchToProfileSetUpActivity();
+                break;
+            case R.id.langImageView:
+                dispatchToLanguageActivity();
+                break;
+        }
+    }
+
+    private void dispatchToProfileSetUpActivity() {
+        Intent intent = new Intent(SignupActivity.this, ProfileSetUpActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void dispatchToLoginActivity() {
+        Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
+    private void dispatchToLanguageActivity() {
+        Intent intent = new Intent(SignupActivity.this, LanguageActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

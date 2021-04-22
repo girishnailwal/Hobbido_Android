@@ -34,12 +34,18 @@ public NotificationAdapter(Context context,List<String> dataList){
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolders holder, int position) {
-
+//     if(position==0){
+//         holder.acceptTv.setVisibility(View.VISIBLE);
+//         holder.acceptTv.setVisibility(View.VISIBLE);
+//     }else {
+//         holder.acceptTv.setVisibility(View.GONE);
+//         holder.acceptTv.setVisibility(View.GONE);
+//     }
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 5;
     }
 
     public class MyViewHolders extends RecyclerView.ViewHolder {

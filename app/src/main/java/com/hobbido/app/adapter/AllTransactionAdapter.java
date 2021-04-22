@@ -6,9 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.hobbido.app.R;
+import com.hobbido.app.activity.AllTransactionActivity;
+import com.hobbido.app.activity.WalletActivity;
 
 import java.util.List;
 
@@ -16,6 +19,7 @@ public class AllTransactionAdapter extends RecyclerView.Adapter<AllTransactionAd
 
     Context context;
     List<String> dataList;
+
     public AllTransactionAdapter(Context context, List<String> dataList){
         this.context = context;
         this.dataList = dataList;
@@ -26,12 +30,15 @@ public class AllTransactionAdapter extends RecyclerView.Adapter<AllTransactionAd
     @Override
     public AllTransactionAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.all_transaction_list_layout,parent,false);
+        View view = inflater.inflate(R.layout.all_transaction_single_row,parent,false);
         return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull AllTransactionAdapter.MyViewHolder holder, int position) {
+         holder.itemView.setOnClickListener(v -> {
+             ((AllTransactionActivity)context).dispatchToSuccessActivity();
+         });
 
     }
 

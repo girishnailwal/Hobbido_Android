@@ -10,9 +10,11 @@
 
 
     <color name="text_color">#26374b</color>26374b
+    <color name="home_bg_color">#f9f9ff</color>26374b
     <color name="colorWhite">#FFFFFFFF</color>
     <color name="ColorPurpleDark">#672a7a</color>
-    <color name="ColorLightGray">#d7d9db</color>
+    <color name="ColorPurpleLight">#cbb4d2</color>
+    <color name="ColorLightGray">#d7d9db</color>f3f3f3
     <color name="edit_text_color">#353b48</color>
     <color name="edit_text_hint_color">#959ba4</color>#a2a9b2
     <color name="ColorOrange">#ff8400</color>
@@ -22,7 +24,7 @@
     <color name="ColorLightBlack">#353b48</color>
     <color name="ColorLightRed">#f56060</color>#353b48
     <color name="color_gray_2">#7d8088</color>#d0d7e6
-    <color name="Color_app_textview">#444251</color>
+    <color name="Color_app_textview">#444251</color>#444251
     <color name="light_gray">#eff1f3</color>
     <color name="color_gray_3">#a2a9b2</color>
 </resources>

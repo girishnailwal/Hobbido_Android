@@ -7,7 +7,7 @@
     tools:context=".activity.ForgotPasswordActivity">
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/backImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -28,8 +28,8 @@
         android:textSize="22sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView17"
-        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+        app:layout_constraintStart_toStartOf="@+id/backImageView"
+        app:layout_constraintTop_toTopOf="@+id/backImageView" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/phone_number_button"

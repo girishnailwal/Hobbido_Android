@@ -1,6 +1,7 @@
 package com.hobbido.app.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hobbido.app.R;
+import com.hobbido.app.activity.WaitingBookingActivity;
 import com.hobbido.app.adapter.MyBookingAdapter;
 import com.hobbido.app.adapter.ProgramAdapter;
 
@@ -61,10 +63,15 @@ public class WaitingListFragment extends Fragment {
             arrayList.add("sannju");
         }
 
-        MyBookingAdapter adapter = new MyBookingAdapter(activity, arrayList);
+        MyBookingAdapter adapter = new MyBookingAdapter(activity, arrayList,this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(activity);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+    }
+
+    public void dispatchToWaitingBookingActivity(){
+        Intent intent = new Intent(activity, WaitingBookingActivity.class);
+        startActivity(intent);
     }
 }

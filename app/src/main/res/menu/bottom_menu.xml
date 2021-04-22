@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <item
-        android:id="@+id/home"
+        android:id="@+id/nav_home"
         android:title="Home"
         android:icon="@drawable/home_selector"
        />
@@ -14,7 +14,7 @@
         android:title="Profile"
        />
     <item
-        android:id="@+id/category"
+        android:id="@+id/nav_category"
         android:icon="@drawable/category_selector"
         android:title="Categories"
         />

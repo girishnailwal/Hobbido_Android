@@ -60,23 +60,23 @@
         app:layout_constraintTop_toTopOf="@+id/textView19" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/walletImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView24"
-        app:layout_constraintTop_toTopOf="@+id/imageView24"
+        app:layout_constraintStart_toEndOf="@+id/message_imge"
+        app:layout_constraintTop_toTopOf="@+id/message_imge"
         app:srcCompat="@drawable/group_37307" />
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/myCartImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView24"
+        app:layout_constraintEnd_toStartOf="@+id/message_imge"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,15 +84,15 @@
         app:srcCompat="@drawable/group_37334" />
 
     <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/message_imge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView25"
+        app:layout_constraintEnd_toStartOf="@+id/walletImageView"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView23"
-        app:layout_constraintTop_toTopOf="@+id/imageView23"
+        app:layout_constraintStart_toEndOf="@+id/myCartImageView"
+        app:layout_constraintTop_toTopOf="@+id/myCartImageView"
         app:srcCompat="@drawable/group_37725" />
 
     <TextView
@@ -106,10 +106,10 @@
         android:textColor="#ff8400"
         android:textSize="10sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+        app:layout_constraintBottom_toBottomOf="@+id/walletImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintStart_toEndOf="@+id/imageView25" />
+        app:layout_constraintStart_toEndOf="@+id/walletImageView" />
 
     <View
         android:id="@+id/view4"
@@ -121,7 +121,7 @@
         android:background="@color/ColorLightGray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+        app:layout_constraintTop_toBottomOf="@+id/myCartImageView" />
 
     <ScrollView
         android:layout_width="0dp"
@@ -150,6 +150,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/myBooking_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -184,6 +185,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/prepaidSession_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -218,6 +220,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/myRewards_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -252,6 +255,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/paymentMethods_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -286,6 +290,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wishlist_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -333,6 +338,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout_first">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/language_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -367,6 +373,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/setting_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -401,6 +408,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/becomeAHost_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -435,6 +443,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/helpCenter_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -480,6 +489,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout_second">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/aboutHobbido_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -516,6 +526,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/legal_cl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -539,7 +550,7 @@
                         android:layout_marginEnd="16dp"
                         android:fontFamily="@font/poppins_regular"
                         android:lineSpacingExtra="35sp"
-                        android:text="Page"
+                        android:text="Legal"
                         android:textColor="@color/ColorBlack"
                         android:textSize="14sp"
                         android:textStyle="normal"

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LegalInfoActivity">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/generalTermsTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="@color/Color_app_textview"
+        android:lineSpacingExtra="9sp"
+        android:text="General Term of Use"
+        android:background="@color/ColorLightGray"
+        android:drawableEnd="@drawable/right_chevron"
+        android:drawablePadding="10dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1"/>
+
+    <TextView
+        android:id="@+id/hostTermsTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="@color/Color_app_textview"
+        android:lineSpacingExtra="9sp"
+        android:text="Host Terms of Use"
+        android:background="@color/ColorLightGray"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        android:drawableEnd="@drawable/right_chevron"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generalTermsTv"/>
+
+    <TextView
+        android:id="@+id/privacyPolicyTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="@color/Color_app_textview"
+        android:lineSpacingExtra="9sp"
+        android:text="Privacy Policy"
+        android:background="@color/ColorLightGray"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        android:drawableEnd="@drawable/right_chevron"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hostTermsTv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

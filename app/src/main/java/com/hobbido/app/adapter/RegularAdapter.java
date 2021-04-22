@@ -5,12 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.hobbido.app.R;
+import com.hobbido.app.fragment.RegularFragment;
 
 import java.util.List;
 
@@ -18,9 +19,11 @@ public class RegularAdapter extends RecyclerView.Adapter<RegularAdapter.MyViewHo
 
     Context context;
     List<String> dayList;
-    public RegularAdapter(Context context, List<String> list) {
+    Fragment fragment;
+    public RegularAdapter(Context context, List<String> list, Fragment fragment) {
         this.context = context;
         this.dayList = list;
+        this.fragment = fragment;
     }
 
     @NonNull
@@ -33,7 +36,9 @@ public class RegularAdapter extends RecyclerView.Adapter<RegularAdapter.MyViewHo
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+      holder.itemView.setOnClickListener(v -> {
+          ((RegularFragment)fragment).dispatchToDetailsActivity();
+      });
     }
 
     @Override
@@ -42,9 +47,10 @@ public class RegularAdapter extends RecyclerView.Adapter<RegularAdapter.MyViewHo
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-
+        ImageView calenderImageView;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            calenderImageView = itemView.findViewById(R.id.calenderImageView);
 
         }
     }

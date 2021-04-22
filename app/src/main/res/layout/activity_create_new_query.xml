@@ -2,236 +2,213 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    tools:context=".CreateNewQueryActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <include
+        android:id="@+id/include1"
+        layout="@layout/custom_tool_bar_second"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include1">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="40dp"
-                    android:background="@color/ColorBackground"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-
-                    <TextView
-                        android:id="@+id/booking_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="15dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Booking ID"
-                        android:textColor="@color/text_color"
-                        android:textSize="15sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/booking_code"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:lineSpacingExtra="7sp"
-                        android:text="HOB25626XK"
-                        android:textColor="@color/text_color"
-                        android:textSize="13sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="@id/booking_id"
-                        app:layout_constraintTop_toBottomOf="@id/booking_id" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="5dp"
-                    android:background="@color/ColorBackground"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/constraintLayout">
-
-
-                    <TextView
-                        android:id="@+id/transition_amnt_header"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Transaction Amount"
-                        android:textColor="@color/text_color"
-                        android:textSize="15sp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/transaction_amnt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:lineSpacingExtra="7sp"
-                        android:text="$100.00"
-                        android:textColor="@color/text_color"
-                        android:textSize="13sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="@id/transition_amnt_header"
-                        app:layout_constraintTop_toBottomOf="@id/transition_amnt_header" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </LinearLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@id/constraintLayout1"
-            android:layout_width="fill_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/edit_text_background"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@color/ColorBackground"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout1">
+            app:layout_constraintTop_toTopOf="parent">
 
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="fill_parent"
+            <TextView
+                android:id="@+id/booking_id"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Booking ID"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@id/constraintLayout2"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/edit_text_background"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/constraintLayout1">
-
-                <EditText
-                    android:id="@+id/subject"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:background="@null"
-                    android:backgroundTint="@color/white"
-                    android:fontFamily="@font/poppins_regular"
-                    android:hint="Subject"
-                    android:lineSpacingExtra="7sp"
-                    android:textColor="#a2a9b2"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"></EditText>
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@id/constraintLayout3"
-                android:layout_width="fill_parent"
-                android:layout_height="150dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/edit_text_background"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/constraintLayout2">
-
-                <EditText
-                    android:id="@+id/write_message"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@null"
-                    android:backgroundTint="@color/white"
-                    android:fontFamily="@font/poppins_regular"
-                    android:lineSpacingExtra="7sp"
-                    android:hint="Write your message"
-                    android:textColor="#a2a9b2"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"></EditText>
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/confirm_del_button"
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/booking_code"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/btn_rounded_bg"
-                android:backgroundTint="@null"
-                android:fontFamily="@font/poppins_semibold"
-                android:lineSpacingExtra="9sp"
-                android:text="Send"
-                android:textAllCaps="false"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:textStyle="normal"
+                android:fontFamily="@font/poppins_regular"
+                android:lineSpacingExtra="7sp"
+                android:text="HOB25626XK"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-                app:layout_constraintVertical_bias="1.0" />
-
+                app:layout_constraintStart_toStartOf="@id/booking_id"
+                app:layout_constraintTop_toBottomOf="@id/booking_id" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@color/ColorBackground"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout">
 
-    </ScrollView>
+
+        <TextView
+            android:id="@+id/transition_amnt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Transaction Amount"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/transaction_amnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineSpacingExtra="7sp"
+            android:text="$100.00"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/transition_amnt_header"
+            app:layout_constraintTop_toBottomOf="@id/transition_amnt_header" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/edit_text_background"
+            android:elevation="1dp">
+
+            <Spinner
+                android:id="@+id/selectCategorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="Select your Company Name"
+                android:background="@drawable/edit_text_background"
+                android:overlapAnchor="false">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/recipeTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:drawableRight="@drawable/xmlid_225"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Select a query"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/ColorBlack"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editSubject"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Subject"
+        android:lineSpacingExtra="7sp"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="14sp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout_first"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_first"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_first"></EditText>
+
+    <EditText
+        android:id="@+id/editEnterMesssage"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:cursorVisible="true"
+        android:elevation="2dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="start"
+        android:hint="Add description"
+        android:textSize="15sp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/edit_text_hint_color"
+        android:textColorHint="@color/edit_text_hint_color"
+        app:layout_constraintEnd_toEndOf="@id/editSubject"
+        app:layout_constraintStart_toStartOf="@id/editSubject"
+        app:layout_constraintTop_toBottomOf="@id/editSubject" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_rounded_bg"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="9sp"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

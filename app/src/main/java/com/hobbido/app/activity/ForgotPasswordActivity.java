@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.hobbido.app.R;
 import com.hobbido.app.fragment.EmailFragment;
@@ -17,6 +19,7 @@ import java.util.ArrayList;
 public class ForgotPasswordActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button phone_number_button,email_button;
+    ImageView backImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,8 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
     public void initView(){
         phone_number_button = findViewById(R.id.phone_number_button);
         email_button = findViewById(R.id.email_button);
+        backImageView = findViewById(R.id.backImageView);
+        backImageView.setOnClickListener(this);
 
         phone_number_button.setOnClickListener(this);
         email_button.setOnClickListener(this);
@@ -44,8 +49,13 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
             case R.id.email_button:
                 showEmailFragment();
                 break;
+            case R.id.backImageView:
+                dispatchToLoginActivity();
+                break;
         }
     }
+
+
 
 
     public void showPhoneNumberFragment() {
@@ -82,5 +92,12 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
         phone_number_button.setTextColor(getResources().getColor(R.color.ColorBlack));
         email_button.setBackground(getResources().getDrawable(R.drawable.rounded_purpale_bg));
         phone_number_button.setBackground(getResources().getDrawable(R.drawable.unselected_gray_btn_bg));
+    }
+
+    private void dispatchToLoginActivity() {
+        Intent intent = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+
     }
 }
